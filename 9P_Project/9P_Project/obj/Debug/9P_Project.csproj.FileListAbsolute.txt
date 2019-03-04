@@ -1,0 +1,10 @@
+C:\Users\freek\Desktop\9P\9P_Project\9P_Project\bin\Debug\9P_Project.exe.config
+C:\Users\freek\Desktop\9P\9P_Project\9P_Project\bin\Debug\9P_Project.exe
+C:\Users\freek\Desktop\9P\9P_Project\9P_Project\bin\Debug\9P_Project.pdb
+C:\Users\freek\Desktop\9P\9P_Project\9P_Project\obj\Debug\9P_Project.csprojResolveAssemblyReference.cache
+C:\Users\freek\Desktop\9P\9P_Project\9P_Project\obj\Debug\_9P_Project.MainPage.resources
+C:\Users\freek\Desktop\9P\9P_Project\9P_Project\obj\Debug\_9P_Project.Properties.Resources.resources
+C:\Users\freek\Desktop\9P\9P_Project\9P_Project\obj\Debug\9P_Project.csproj.GenerateResource.Cache
+C:\Users\freek\Desktop\9P\9P_Project\9P_Project\obj\Debug\9P_Project.exe
+C:\Users\freek\Desktop\9P\9P_Project\9P_Project\obj\Debug\9P_Project.pdb
+C:\Users\freek\Desktop\9P\9P_Project\9P_Project\obj\Debug\_9P_Project.LB1_Titul.resources
