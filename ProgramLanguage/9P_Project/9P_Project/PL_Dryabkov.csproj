@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ClassLibrary2">
+      <HintPath>..\..\..\..\..\9P\ClassLibrary2\ClassLibrary2\bin\Debug\ClassLibrary2.dll</HintPath>
+    </Reference>
     <Reference Include="ClassLibraryLab2">
       <HintPath>..\..\9P\ClassLibraryLab2\ClassLibraryLab2\bin\Debug\ClassLibraryLab2.dll</HintPath>
     </Reference>
@@ -152,6 +155,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lab2\LB2_Titul.resx">
       <DependentUpon>LB2_Titul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab3\LB3_Main.resx">
+      <DependentUpon>LB3_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab3\LB3_Titul.resx">
+      <DependentUpon>LB3_Titul.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
