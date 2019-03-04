@@ -17,8 +17,11 @@ namespace _9P_Project
             InitializeComponent();
         }
         Button BT_Next1 = new Button();
+        int defWeightF;
+
         private void LB2_Titul_Load(object sender, EventArgs e)
         {
+
             BT_Next1.Location = new Point(7, this.Height - 130);
             BT_Next1.Width = 150;
             BT_Next1.Text = "Перейти к решению";
@@ -33,7 +36,16 @@ namespace _9P_Project
             BT_Exit.Location = new Point(this.Width / 4, this.Height - 130);
             BT_Exit.Click += new EventHandler(LB1_FormClosing);
             Controls.Add(BT_Exit);
+
+            defWeightF = this.Width;
+            int defHeightF = this.Height;
+            this.WindowState = FormWindowState.Normal;
+            this.Width = 5;
+            this.Height = defHeightF;
+            TM_Anim.Start();
         }
+        
+
 
         private void BT_Next1_Click(object sende, EventArgs e)
         {
@@ -74,6 +86,14 @@ namespace _9P_Project
         private void LB2_Titul_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void TM_Anim_Tick(object sender, EventArgs e)
+        {
+            if (this.Width != defWeightF)
+                this.Width = this.Width + 10;
+            if (this.Width >= defWeightF)
+                this.WindowState = FormWindowState.Maximized;
         }
     }
 }

@@ -83,6 +83,16 @@ namespace _9P_Project
             BT_Exit.Click += new EventHandler(LB1_main_FormClosing);
             Controls.Add(BT_Exit);
         }
+
+        void TB_KeuPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if (!Char.IsDigit(number) && number != 8 && number != 44 && number != 45) // цифры, клавиша BackSpace и запятая
+            {
+                e.Handled = true;
+            }
+        }
+
         private void Run_click(object sender, EventArgs e)
         {   
             double B, C, Xs, Xe, H;
@@ -175,6 +185,7 @@ namespace _9P_Project
 
             TB_B.Size = new Size(55, 20);
             TB_B.Location = new Point(LB_B.Location.X + LB_B.Width + 1, LB_B.Location.Y - 3);
+            TB_B.KeyPress += TB_KeuPress;
             Controls.Add(TB_B);
         }
         private void CreatePointC()
@@ -187,6 +198,7 @@ namespace _9P_Project
 
             TB_C.Size = new Size(55, 20);
             TB_C.Location = new Point(LB_C.Location.X + LB_C.Width + 1, LB_C.Location.Y - 3);
+            TB_C.KeyPress += TB_KeuPress;
             Controls.Add(TB_C);
         }
         private void CreatePointX()
@@ -199,10 +211,12 @@ namespace _9P_Project
 
             TB_Xs.Size = new Size(55, 20);
             TB_Xs.Location = new Point(LB_X_S.Location.X + LB_X_S.Width + 1, LB_X_S.Location.Y - 3);
+            TB_Xs.KeyPress += TB_KeuPress;
             Controls.Add(TB_Xs);
 
             TB_Xe.Size = new Size(55, 20);
             TB_Xe.Location = new Point(TB_Xs.Location.X + TB_Xs.Width + 5, LB_X_S.Location.Y - 3);
+            TB_Xe.KeyPress += TB_KeuPress;
             Controls.Add(TB_Xe);
 
             LB_S_E.Location = new Point(TB_Xe.Location.X + TB_Xe.Width + 1, LB_X_S.Location.Y);
@@ -220,6 +234,7 @@ namespace _9P_Project
 
             TB_H.Size = new Size(55, 20);
             TB_H.Location = new Point(LB_H.Location.X + LB_H.Width + 1, LB_H.Location.Y - 3);
+            TB_H.KeyPress += TB_KeuPress;
             Controls.Add(TB_H);
         }
 

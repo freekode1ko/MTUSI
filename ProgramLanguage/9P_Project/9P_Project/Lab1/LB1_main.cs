@@ -159,6 +159,15 @@ namespace _9P_Project
                 BT_Exit.Click += new EventHandler(LB1_main_FormClosing);
                 Controls.Add(BT_Exit);
         }
+
+        void TB_KeuPress(object sender, KeyPressEventArgs e)
+        {char number = e.KeyChar;
+            if (!Char.IsDigit(number) && number != 8 && number != 44) // цифры, клавиша BackSpace и запятая
+            {
+                e.Handled = true;
+            }
+        }
+
         private void CreateX()
         {
             // X
@@ -169,6 +178,7 @@ namespace _9P_Project
 
             TB_X.Size = new Size(55, 20);
             TB_X.Location = new Point(LB_X.Location.X + LB_X.Width + 1, LB_X.Location.Y - 3);
+            TB_X.KeyPress += TB_KeuPress;
             Controls.Add(TB_X);
         }
         private void CreateY()
@@ -181,6 +191,7 @@ namespace _9P_Project
 
             TB_Y.Size = new Size(55, 20);
             TB_Y.Location = new Point(LB_Y.Location.X + LB_Y.Width + 1, LB_Y.Location.Y - 3);
+            TB_Y.KeyPress += TB_KeuPress;
             Controls.Add(TB_Y);
         }
 
@@ -390,10 +401,12 @@ namespace _9P_Project
 
             TB_Ax.Size = new Size(55, 20);
             TB_Ax.Location = new Point(LB_A_S.Location.X + LB_A_S.Width + 1, LB_A_S.Location.Y - 3);
+            TB_Ax.KeyPress += TB_KeuPress;
             Controls.Add(TB_Ax);
 
             TB_Ay.Size = new Size(55, 20);
             TB_Ay.Location = new Point(TB_Ax.Location.X + TB_Ax.Width + 5, LB_A_S.Location.Y - 3);
+            TB_Ay.KeyPress += TB_KeuPress;
             Controls.Add(TB_Ay);
 
             LB_A_E.Location = new Point(TB_Ay.Location.X + TB_Ay.Width + 1, LB_A_S.Location.Y);
@@ -411,10 +424,12 @@ namespace _9P_Project
 
             TB_Bx.Size = new Size(55, 20);
             TB_Bx.Location = new Point(LB_B_S.Location.X + LB_B_S.Width + 1, LB_B_S.Location.Y - 3);
+            TB_Bx.KeyPress += TB_KeuPress;
             Controls.Add(TB_Bx);
 
             TB_By.Size = new Size(55, 20);
             TB_By.Location = new Point(TB_Bx.Location.X + TB_Bx.Width + 5, LB_B_S.Location.Y - 3);
+            TB_By.KeyPress += TB_KeuPress;
             Controls.Add(TB_By);
 
             LB_B_E.Location = new Point(TB_By.Location.X + TB_By.Width + 1, LB_B_S.Location.Y);
@@ -432,10 +447,12 @@ namespace _9P_Project
 
             TB_Cx.Size = new Size(55, 20);
             TB_Cx.Location = new Point(LB_C_S.Location.X + LB_C_S.Width + 1, LB_C_S.Location.Y - 3);
+            TB_Cx.KeyPress += TB_KeuPress;
             Controls.Add(TB_Cx);
 
             TB_Cy.Size = new Size(55, 20);
             TB_Cy.Location = new Point(TB_Cx.Location.X + TB_Cx.Width + 5, LB_C_S.Location.Y - 3);
+            TB_Cy.KeyPress += TB_KeuPress;
             Controls.Add(TB_Cy);
 
             LB_C_E.Location = new Point(TB_Cy.Location.X + TB_Cy.Width + 1, LB_C_S.Location.Y);

@@ -28,7 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.TM_Anim = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
+            // 
+            // TM_Anim
+            // 
+            this.TM_Anim.Interval = 1;
+            this.TM_Anim.Tick += new System.EventHandler(this.TM_Anim_Tick);
             // 
             // LB2_Titul
             // 
@@ -47,5 +54,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer TM_Anim;
     }
 }
