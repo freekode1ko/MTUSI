@@ -87,7 +87,7 @@ namespace _9P_Project
         void TB_KeuPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
-            if (!Char.IsDigit(number) && number != 8 && number != 44 && number != 45) // цифры, клавиша BackSpace и запятая
+            if (!Char.IsDigit(number) && number != 8 && number != 44 && number != 45) // цифры, BackSpace и запятая
             {
                 e.Handled = true;
             }
@@ -112,18 +112,24 @@ namespace _9P_Project
                 LB_MoreThanOne.Items.Add("Значения при Х > 1");
                 LB_LessThanZero.Items.Add("Значения при Х < 0");
                 LB_EqualZero.Items.Add("Значения при других Х");
-                while (Xs<=Xe)
+                for(;Xs<=Xe;Xs=Xs+H)
+               // while (Xs<=Xe)
                 {
                     if (Xs > 1)
-                        // LB_MoreThanOne.Items.Add(Ans(B,C,Xs));
-                        LB_MoreThanOne.Items.Add(Class1.Ans(B, C, Xs));
-                    if (Xs < 0)
+                    // LB_MoreThanOne.Items.Add(Ans(B,C,Xs));
+                    { LB_MoreThanOne.Items.Add(Class1.Ans(B, C, Xs)); }
+                    else
+                    {
+                        if (Xs < 0)
                         // LB_LessThanZero.Items.Add(Ans(B, C, Xs));
-                        LB_LessThanZero.Items.Add(Class1.Ans(B, C, Xs));
-                    if (Xs < 1 && Xs > 0)
-                        //LB_EqualZero.Items.Add(Ans(B, C, Xs));
-                        LB_EqualZero.Items.Add(Class1.Ans(B, C, Xs));
-                    Xs = Xs + H;
+                        { LB_LessThanZero.Items.Add(Class1.Ans(B, C, Xs)); }
+                        else
+                        {
+                            //LB_EqualZero.Items.Add(Ans(B, C, Xs));
+                            LB_EqualZero.Items.Add(Class1.Ans(B, C, Xs));
+                        }
+                    }
+                    //Xs = Xs + H;
                 }
                 int nn1 = LB_MoreThanOne.Items.Count; int nn2 = LB_LessThanZero.Items.Count; int nn3 = LB_EqualZero.Items.Count;
                 double MaxTable1 =0, MaxTable2=0, MaxTable3=0;

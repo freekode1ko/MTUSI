@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClassLibrary2</name>
+    </assembly>
+    <members>
+        <member name="T:ClassLibrary2.Class1">
+            <summary>
+            Генерация случайных чисел для получения порядка вывода ответов
+            </summary>
+        </member>
+        <member name="M:ClassLibrary2.Class1.Rand(System.Int32,System.Int32[])">
+            <summary>
+            Метод генерации случайных чисел для получения порядка вывода ответов
+            </summary>
+            <param name="max"></param>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

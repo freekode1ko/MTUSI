@@ -26,7 +26,6 @@ namespace _9P_Project
             Controls.Add(BT_Next1);
 
             createDescription(); 
-            //http://www.iprbookshop.ru/5748&book_id=79746
 
             Button BT_Exit = new Button();
             BT_Exit.Text = "Назад";
@@ -46,11 +45,7 @@ namespace _9P_Project
             Controls.Add(LB_LabText);
 
             WebBrowser WB_Book = new WebBrowser();
-            // WB_Book.Navigate("http://www.iprbookshop.ru/5748&book_id=79746");
-            //string url = "C:/test.pdf";
-            // WB_Book.Navigate("file:///" + url);
-            //WB_Book.Navigate("C:/Users/freek/Desktop/bok.html");
-            WB_Book.Navigate(System.IO.Directory.GetCurrentDirectory() + "/Book.html");
+            WB_Book.Navigate(System.IO.Directory.GetCurrentDirectory() + "\\BookFolder\\Book.html");
             WB_Book.Location = new Point(LB_LabText.Location.X+10,LB_LabText.Location.Y + LB_LabText.Height + 20);
             WB_Book.Size = new Size(this.Width -30, this.Height - LB_LabText.Height - 150);
             Controls.Add(WB_Book);
