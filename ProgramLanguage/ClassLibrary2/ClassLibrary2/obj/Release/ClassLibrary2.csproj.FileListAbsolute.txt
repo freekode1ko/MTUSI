@@ -1,0 +1,4 @@
+C:\Users\freek\Desktop\9P\ClassLibrary2\ClassLibrary2\bin\Release\ClassLibrary2.dll
+C:\Users\freek\Desktop\9P\ClassLibrary2\ClassLibrary2\bin\Release\ClassLibrary2.pdb
+C:\Users\freek\Desktop\9P\ClassLibrary2\ClassLibrary2\obj\Release\ClassLibrary2.dll
+C:\Users\freek\Desktop\9P\ClassLibrary2\ClassLibrary2\obj\Release\ClassLibrary2.pdb

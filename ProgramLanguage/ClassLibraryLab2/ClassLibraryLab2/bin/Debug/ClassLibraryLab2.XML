@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClassLibraryLab2</name>
+    </assembly>
+    <members>
+        <member name="T:ClassLibraryLab2.Class1">
+            <summary>
+            Решение системы уравнения
+            </summary>
+        </member>
+        <member name="M:ClassLibraryLab2.Class1.Ans(System.Double,System.Double,System.Double)">
+            <summary>
+            Метод решения системы уравнения
+            </summary>
+            <param name="B"></param>
+            <param name="C"></param>
+            <param name="X"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

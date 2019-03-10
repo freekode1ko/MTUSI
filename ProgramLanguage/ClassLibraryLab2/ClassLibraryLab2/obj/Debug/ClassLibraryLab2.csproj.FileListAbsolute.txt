@@ -1,0 +1,6 @@
+C:\Users\freek\Desktop\9P\ClassLibraryLab2\ClassLibraryLab2\bin\Debug\ClassLibraryLab2.dll
+C:\Users\freek\Desktop\9P\ClassLibraryLab2\ClassLibraryLab2\bin\Debug\ClassLibraryLab2.pdb
+C:\Users\freek\Desktop\9P\ClassLibraryLab2\ClassLibraryLab2\obj\Debug\ClassLibraryLab2.dll
+C:\Users\freek\Desktop\9P\ClassLibraryLab2\ClassLibraryLab2\obj\Debug\ClassLibraryLab2.pdb
+C:\Users\freek\Desktop\9P\ClassLibraryLab2\ClassLibraryLab2\obj\Debug\ClassLibraryLab2.csprojResolveAssemblyReference.cache
+C:\Users\freek\Desktop\9P\ClassLibraryLab2\ClassLibraryLab2\bin\Debug\ClassLibraryLab2.XML
