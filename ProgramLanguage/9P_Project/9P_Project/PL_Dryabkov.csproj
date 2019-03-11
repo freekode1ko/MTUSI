@@ -36,8 +36,9 @@
     <Reference Include="ClassLibrary2">
       <HintPath>..\..\..\..\..\9P\ClassLibrary2\ClassLibrary2\bin\Debug\ClassLibrary2.dll</HintPath>
     </Reference>
-    <Reference Include="ClassLibraryLab2">
-      <HintPath>..\..\9P\ClassLibraryLab2\ClassLibraryLab2\bin\Debug\ClassLibraryLab2.dll</HintPath>
+    <Reference Include="ClassLibraryLab2, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\9P\ClassLibraryLab2\ClassLibraryLab2\bin\Debug\ClassLibraryLab2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

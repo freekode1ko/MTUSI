@@ -37,8 +37,9 @@ namespace _9P_Project
         private void LB3_Main_Load(object sender, EventArgs e)
         {
             GB_Place.Location = new Point(20, 20);
-            GB_Place.Size = new Size(this.Width - 200, this.Height - 200);
-            GB_Place.Text = "Продолжите фразу: Саня, Cаня ...";
+            GB_Place.Size = new Size(this.Width - 50, this.Height - 200);
+            GB_Place.Text = "Что такое машинное обучение?";
+            GB_Place.Font = new Font("Times New Roman", 16.0f);
             Controls.Add(GB_Place);
 
             BT_Next.Location = new Point(20, this.Height - (Math.Abs(GB_Place.Height - this.Height))/2);
@@ -47,50 +48,70 @@ namespace _9P_Project
             BT_Next.Click += new EventHandler(BT_Next_Click);
             Controls.Add(BT_Next);
 
-            
-            int PosY = 20;
+            RB_Ans.Width = 1300;
+            RB_Ans2.Width = 1300;
+            RB_Ans3.Width = 1300;
+            RB_Ans4.Width = 1300;
+
+            RB_Ans.Height = 40;
+            RB_Ans2.Height = 40;
+            RB_Ans3.Height = 40;
+            RB_Ans4.Height = 40;
+
+            ChB_Ans.Width = 1300;
+            ChB_Ans2.Width = 1300;
+            ChB_Ans3.Width = 1300;
+            ChB_Ans4.Width = 1300;
+
+            ChB_Ans.Height = 40;
+            ChB_Ans2.Height = 40;
+            ChB_Ans3.Height = 40;
+            ChB_Ans4.Height = 40;
+
+
+            int PosY = 40;
             int max = 4;
             int[] x = new int[max];
             Class1.Rand(max , x);
             foreach (int i in x)
             {
-                PosY = PosY + 20;
+                PosY = PosY + 40;
                 int rInt = i;
                 switch (rInt)
                 {
                     case 0:
 
                         ChB_Ans.Location = new Point(GB_Place.Location.X + 10, GB_Place.Location.Y + PosY);
-                        ChB_Ans.Text = "Хуй соси";
-                        ChB_Ans.Width = 100;
-                        ChB_Ans.Height = 20;
+                        ChB_Ans.Text = "Методы, которые позволят компьютерам повышать эффективность своих действий с помощью накопленного опыта.";
+                        
+                         
                         ChB_Ans.Tag = 0;
                         GB_Place.Controls.Add(ChB_Ans);
                         break;
                     case 1:
 
                         ChB_Ans2.Location = new Point(GB_Place.Location.X + 10, GB_Place.Location.Y + PosY);
-                        ChB_Ans2.Text = "Ты впорядке?";
-                        ChB_Ans2.Width = 100;
-                        ChB_Ans2.Height = 20;
+                        ChB_Ans2.Text = "Это процесс работы программы для работы с большим обьемом данных";
+                         
+                         
                         ChB_Ans2.Tag = 1;
                         GB_Place.Controls.Add(ChB_Ans2);
                         break;
                     case 2:
 
                         ChB_Ans3.Location = new Point(GB_Place.Location.X + 10, GB_Place.Location.Y + PosY);
-                        ChB_Ans3.Text = "Я незнаю";
-                        ChB_Ans3.Width = 100;
-                        ChB_Ans3.Height = 20;
+                        ChB_Ans3.Text = "Это наука об изучении построении логики процессоров";
+                         
+                         
                         ChB_Ans3.Tag = 2;
                         GB_Place.Controls.Add(ChB_Ans3);
                         break;
                     case 3:
 
                         ChB_Ans4.Location = new Point(GB_Place.Location.X + 10, GB_Place.Location.Y + PosY);
-                        ChB_Ans4.Text = "Я Саня";
-                        ChB_Ans4.Width = 100;
-                        ChB_Ans4.Height = 20;
+                        ChB_Ans4.Text = "Это способ обучения роботов примитивным действиям";
+                         
+                         
                         ChB_Ans4.Tag = 3;
                         GB_Place.Controls.Add(ChB_Ans4);
                         break;
@@ -143,57 +164,57 @@ namespace _9P_Project
 
         private void NextQuiz()
         {
-            GB_Place.Text = "Я тут пофлексю?";
+            GB_Place.Text = "Что такое нейронная сеть?";
             HideAns();
             ChB_Ans.Show();
             ChB_Ans2.Show();
             ChB_Ans3.Show();
             ChB_Ans4.Show();
             {
-                int PosY = 20;
+                int PosY = 40;
                 Random r = new Random();
                 int max = 4;
                 int[] x = new int[max];
                 Class1.Rand(max, x);
                 foreach (int i in x)
                 {
-                    PosY = PosY + 20;
+                    PosY = PosY + 40;
                     int rInt = i;
                     switch (rInt)
                     {
                         case 0:
 
                             ChB_Ans.Location = new Point(GB_Place.Location.X + 10, GB_Place.Location.Y + PosY);
-                            ChB_Ans.Text = "Да";
-                            ChB_Ans.Width = 100;
-                            ChB_Ans.Height = 20;
+                            ChB_Ans.Text = "Отдел головного мозга";
+                            
+                             
                             ChB_Ans.Tag = 0;
                             GB_Place.Controls.Add(ChB_Ans);
                             break;
                         case 1:
 
                             ChB_Ans2.Location = new Point(GB_Place.Location.X + 10, GB_Place.Location.Y + PosY);
-                            ChB_Ans2.Text = "Нет";
-                            ChB_Ans2.Width = 100;
-                            ChB_Ans2.Height = 20;
+                            ChB_Ans2.Text = "Логическая цепочка дынных напоминающая дерево";
+                             
+                             
                             ChB_Ans2.Tag = 1;
                             GB_Place.Controls.Add(ChB_Ans2);
                             break;
                         case 2:
 
                             ChB_Ans3.Location = new Point(GB_Place.Location.X + 10, GB_Place.Location.Y + PosY);
-                            ChB_Ans3.Text = "Сарказм";
-                            ChB_Ans3.Width = 100;
-                            ChB_Ans3.Height = 20;
+                            ChB_Ans3.Text = "Нейронная сеть — вид вычислительной системы, которая имитирует свойства нейронов в живых организмах.";
+                             
+                             
                             ChB_Ans3.Tag = 2;
                             GB_Place.Controls.Add(ChB_Ans3);
                             break;
                         case 3:
 
                             ChB_Ans4.Location = new Point(GB_Place.Location.X + 10, GB_Place.Location.Y + PosY);
-                            ChB_Ans4.Text = "Я Саня";
-                            ChB_Ans4.Width = 100;
-                            ChB_Ans4.Height = 20;
+                            ChB_Ans4.Text = "это новый вид компьютеров";
+                             
+                             
                             ChB_Ans4.Tag = 3;
                             GB_Place.Controls.Add(ChB_Ans4);
                             break;
@@ -232,7 +253,7 @@ namespace _9P_Project
         }
         private void NextQiz()
         {
-            GB_Place.Text = "Что вы говоите когда вам что то досталось?";
+            GB_Place.Text = "Что такое УИИ?";
             HideAns();
 
             RB_Ans.Show();
@@ -240,23 +261,23 @@ namespace _9P_Project
             RB_Ans3.Show();
             RB_Ans4.Show();
             {
-                int PosY = 20;
+                int PosY = 40;
                 Random r = new Random();
                 int max = 4;
                 int[] x = new int[max];
                 Class1.Rand(max, x);
                 foreach (int i in x)
                 {
-                    PosY = PosY + 20;
+                    PosY = PosY + 40;
                     int rInt = i;
                     switch (rInt)
                     {
                         case 0:
 
                             RB_Ans.Location = new Point(GB_Place.Location.X + 10, GB_Place.Location.Y + PosY);
-                            RB_Ans.Text = "Спасибо";
-                            RB_Ans.Width = 100;
-                            RB_Ans.Height = 20;
+                            RB_Ans.Text = "“Уникальный Индитефикатор Иностранца”";
+                             
+                             
                             RB_Ans.Tag = 0;
                             GB_Place.Controls.Add(RB_Ans);
                             break;
@@ -264,26 +285,26 @@ namespace _9P_Project
 
                             RB_Ans2.Location = new Point(GB_Place.Location.X + 10, GB_Place.Location.Y + PosY);
                             RB_Ans2.Text = "Ничего";
-                            RB_Ans2.Width = 100;
-                            RB_Ans2.Height = 20;
+                             
+                             
                             RB_Ans2.Tag = 1;
                             GB_Place.Controls.Add(RB_Ans2);
                             break;
                         case 2:
 
                             RB_Ans3.Location = new Point(GB_Place.Location.X + 10, GB_Place.Location.Y + PosY);
-                            RB_Ans3.Text = "GG EZ";
-                            RB_Ans3.Width = 100;
-                            RB_Ans3.Height = 20;
+                            RB_Ans3.Text = "“универсальный ИИ”";
+                             
+                             
                             RB_Ans3.Tag = 2;
                             GB_Place.Controls.Add(RB_Ans3);
                             break;
                         case 3:
 
                             RB_Ans4.Location = new Point(GB_Place.Location.X + 10, GB_Place.Location.Y + PosY);
-                            RB_Ans4.Text = "Я Саня";
-                            RB_Ans4.Width = 100;
-                            RB_Ans4.Height = 20;
+                            RB_Ans4.Text = "Уголовно-исполнительная инспекция";
+                             
+                             
                             RB_Ans4.Tag = 3;
                             GB_Place.Controls.Add(RB_Ans4);
                             break;
@@ -293,7 +314,7 @@ namespace _9P_Project
         }
         private void NextQz()
         {
-            GB_Place.Text = "Продолжите фразу: Лично мне ...";
+            GB_Place.Text = "Что такое закон Мура?";
             HideAns();
 
             RB_Ans.Show();
@@ -301,50 +322,50 @@ namespace _9P_Project
             RB_Ans3.Show();
             RB_Ans4.Show();
             {
-                int PosY = 20;
+                int PosY = 40;
                 Random r = new Random();
                 int max = 4;
                 int[] x = new int[max];
                 Class1.Rand(max, x);
                 foreach (int i in x)
                 {
-                    PosY = PosY + 20;
+                    PosY = PosY + 40;
                     int rInt = i;
                     switch (rInt)
                     {
                         case 0:
 
                             RB_Ans.Location = new Point(GB_Place.Location.X + 10, GB_Place.Location.Y + PosY);
-                            RB_Ans.Text = "Все равно";
-                            RB_Ans.Width = 100;
-                            RB_Ans.Height = 20;
+                            RB_Ans.Text = "Сумма всех токов, втекающих в узел, равна сумме всех токов, вытекающих из узла.";
+                             
+                             
                             RB_Ans.Tag = 0;
                             GB_Place.Controls.Add(RB_Ans);
                             break;
                         case 1:
 
                             RB_Ans2.Location = new Point(GB_Place.Location.X + 10, GB_Place.Location.Y + PosY);
-                            RB_Ans2.Text = "Поебать";
-                            RB_Ans2.Width = 100;
-                            RB_Ans2.Height = 20;
+                            RB_Ans2.Text = "Скорость вычислений, которую можно получить за определённую сумму, удваивается каждые N месяцев, где N примерно равно 18.";
+                             
+                             
                             RB_Ans2.Tag = 1;
                             GB_Place.Controls.Add(RB_Ans2);
                             break;
                         case 2:
 
                             RB_Ans3.Location = new Point(GB_Place.Location.X + 10, GB_Place.Location.Y + PosY);
-                            RB_Ans3.Text = "Я незнаю";
-                            RB_Ans3.Width = 100;
-                            RB_Ans3.Height = 20;
+                            RB_Ans3.Text = "Закон, определяющий связь электродвижущей силы источника с силой тока, протекающего в проводнике.";
+                             
+                             
                             RB_Ans3.Tag = 2;
                             GB_Place.Controls.Add(RB_Ans3);
                             break;
                         case 3:
 
                             RB_Ans4.Location = new Point(GB_Place.Location.X + 10, GB_Place.Location.Y + PosY);
-                            RB_Ans4.Text = "Я Саня";
-                            RB_Ans4.Width = 100;
-                            RB_Ans4.Height = 20;
+                            RB_Ans4.Text = "Сила взаимодействия между двумя точечными электрическими зарядами пропорциональна величинам этих зарядов .";
+                             
+                             
                             RB_Ans4.Tag = 3;
                             GB_Place.Controls.Add(RB_Ans4);
                             break;

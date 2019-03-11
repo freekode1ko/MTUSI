@@ -62,3 +62,5 @@ E:\GIT\MTUSI\ProgramLanguage\9P_Project\9P_Project\obj\Debug\PL_Dryabkov.csproj.
 E:\GIT\MTUSI\ProgramLanguage\9P_Project\9P_Project\obj\Debug\9P_Project.exe
 E:\GIT\MTUSI\ProgramLanguage\9P_Project\9P_Project\obj\Debug\9P_Project.pdb
 C:\Users\freek\Desktop\PlaceForShit\MTUSI_Sec\ProgramLanguage\9P_Project\9P_Project\bin\Debug\ClassLibrary2.xml
+C:\Users\freek\Desktop\PlaceForShit\MTUSI_Sec\ProgramLanguage\9P_Project\9P_Project\bin\Debug\ClassLibraryLab2.dll
+C:\Users\freek\Desktop\PlaceForShit\MTUSI_Sec\ProgramLanguage\9P_Project\9P_Project\bin\Debug\ClassLibraryLab2.xml

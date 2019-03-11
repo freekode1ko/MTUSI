@@ -112,25 +112,28 @@ namespace _9P_Project
                 LB_MoreThanOne.Items.Add("Значения при Х > 1");
                 LB_LessThanZero.Items.Add("Значения при Х < 0");
                 LB_EqualZero.Items.Add("Значения при других Х");
-                for(;Xs<=Xe;Xs=Xs+H)
-               // while (Xs<=Xe)
+
+                // while (Xs<=Xe)
+                for (; Xs <= Xe; Xs = Xs + H)
                 {
                     if (Xs > 1)
+                    { double Vivv = Class1.Ans(B, C, Xs); Class1.Viv(LB_MoreThanOne, Vivv); }
                     // LB_MoreThanOne.Items.Add(Ans(B,C,Xs));
-                    { LB_MoreThanOne.Items.Add(Class1.Ans(B, C, Xs)); }
+                    //{ LB_MoreThanOne.Items.Add(Class1.Ans(B, C, Xs)); }
                     else
                     {
                         if (Xs < 0)
+                        { double Vivv = Class1.Ans(B, C, Xs); Class1.Viv(LB_LessThanZero, Vivv); }
                         // LB_LessThanZero.Items.Add(Ans(B, C, Xs));
-                        { LB_LessThanZero.Items.Add(Class1.Ans(B, C, Xs)); }
+                        //LB_LessThanZero.Items.Add(Class1.Ans(B, C, Xs)); 
                         else
-                        {
+                            { double Vivv = Class1.Ans(B, C, Xs); Class1.Viv(LB_EqualZero, Vivv); }
                             //LB_EqualZero.Items.Add(Ans(B, C, Xs));
-                            LB_EqualZero.Items.Add(Class1.Ans(B, C, Xs));
-                        }
+                            // LB_EqualZero.Items.Add(Class1.Ans(B, C, Xs));
                     }
                     //Xs = Xs + H;
                 }
+                // Поиск максимума на отрезке
                 int nn1 = LB_MoreThanOne.Items.Count; int nn2 = LB_LessThanZero.Items.Count; int nn3 = LB_EqualZero.Items.Count;
                 double MaxTable1 =0, MaxTable2=0, MaxTable3=0;
                 while (nn1 != 1)

@@ -335,15 +335,15 @@ namespace _9P_Project
                 Y = Convert.ToDouble(TB_Y.Text);
 
                 TB_Ans.Text = An(X,Y).ToString();
-                TB_Cint.Text = Convert.ToString(Convert.ToInt32(An(X, Y)));
+                TB_Cint.Text = Convert.ToString((int)(An(X, Y)));
                 TB_Csng.Text = Convert.ToString(Convert.ToSingle(An(X, Y)));
                 TB_Fix.Text = Convert.ToString(Math.Truncate(An(X,Y)));
                 TB_Int.Text = Convert.ToString(Math.Round(An(X, Y)));
                 TB_DoubFloat.Text = Convert.ToString(Convert.ToDouble(TB_Ans.Text) + Convert.ToDouble(TB_Csng.Text));
 
-                AnRef(ref Ans, X, Y);
+                AnRef(X, Y,ref Ans);
                 TB_AnsRef.Text = Ans.ToString();
-                TB_CintRef.Text = Convert.ToString(Convert.ToInt32(Ans));
+                TB_CintRef.Text = Convert.ToString((int)(Ans));
                 TB_CsngRef.Text = Convert.ToString(Convert.ToSingle(Ans));
                 TB_FixRef.Text = Convert.ToString(Math.Truncate(Ans));
                 TB_IntRef.Text = Convert.ToString(Math.Round(Ans));
@@ -355,7 +355,7 @@ namespace _9P_Project
         }
         private double An(double X, double Y)
         {return (X*Y)+Math.Sin(X)/((Math.Abs(1-Y))*(Math.Log(X)));}
-        private void AnRef(ref double Ans, double X, double Y)
+        private void AnRef(double X, double Y, ref double Ans)
         {Ans = An(X, Y);}
         private void Run_click(object sender, EventArgs e)
         {
@@ -368,7 +368,7 @@ namespace _9P_Project
                 X2 = Convert.ToDouble(TB_Bx.Text);
                 Y2 = Convert.ToDouble(TB_By.Text);
                 TB_L12.Text = Ugol(X1, Y1, X2, Y2).ToString();
-                UgolRef(ref Ans, X1, Y1, X2, Y2);
+                UgolRef(X1, Y1, X2, Y2, ref Ans);
                 TB_L12Ref.Text = Ans.ToString();
 
                 //B-C
@@ -377,7 +377,7 @@ namespace _9P_Project
                 X2 = Convert.ToDouble(TB_Cx.Text);
                 Y2 = Convert.ToDouble(TB_Cy.Text);
                 TB_L23.Text = Ugol(X1, Y1, X2, Y2).ToString();
-                UgolRef(ref Ans, X1, Y1, X2, Y2);
+                UgolRef(X1, Y1, X2, Y2, ref Ans);
                 TB_L23Ref.Text = Ans.ToString();
 
                 //A-C
@@ -386,7 +386,7 @@ namespace _9P_Project
                 X2 = Convert.ToDouble(TB_Cx.Text);
                 Y2 = Convert.ToDouble(TB_Cy.Text);
                 TB_L13.Text = Ugol(X1, Y1, X2, Y2).ToString();
-                UgolRef(ref Ans, X1, Y1, X2, Y2);
+                UgolRef(X1, Y1, X2, Y2, ref Ans);
                 TB_L13Ref.Text = Ans.ToString();
             } catch
             {MessageBox.Show("Проверьте данные и попробуйте еще раз.", "Что то пошло не так при попытке расчета.",MessageBoxButtons.OK,MessageBoxIcon.Error);}
@@ -466,7 +466,7 @@ namespace _9P_Project
             return (X1 * X2) + (Y1 * Y2) / (Math.Sqrt((X1 * X1) * (Y1 * Y1))) * (Math.Sqrt((X2 * X2) * (Y2 * Y2)));
         }
 
-        void UgolRef (ref double Ans, double X1, double Y1, double X2, double Y2)
+        void UgolRef (double X1, double Y1, double X2, double Y2, ref double Ans)
         {Ans = Ugol(X1, Y1, X2, Y2);}
 
         private void CreateAns()
