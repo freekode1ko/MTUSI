@@ -6,7 +6,7 @@
     <members>
         <member name="T:ClassLibraryLab2.Class1">
             <summary>
-            Решение системы уравнения
+            Набор методов по решению системы и выводу её ответа
             </summary>
         </member>
         <member name="M:ClassLibraryLab2.Class1.Ans(System.Double,System.Double,System.Double)">
@@ -17,6 +17,11 @@
             <param name="C"></param>
             <param name="X"></param>
             <returns></returns>
+        </member>
+        <member name="M:ClassLibraryLab2.Class1.Viv(System.Windows.Forms.ListBox,System.Double)">
+            <summary>
+            Вывод ответа
+            </summary>
         </member>
     </members>
 </doc>
