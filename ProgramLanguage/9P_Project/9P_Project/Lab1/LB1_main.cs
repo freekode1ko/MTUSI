@@ -359,7 +359,7 @@ namespace _9P_Project
         {Ans = An(X, Y);}
         private void Run_click(object sender, EventArgs e)
         {
-            double X1, Y1, X2, Y2, Ans=0;
+            double TT, X1, Y1, X2, Y2, Ans=0;
             try
             {
                 //A-B
@@ -367,27 +367,42 @@ namespace _9P_Project
                 Y1 = Convert.ToDouble(TB_Ay.Text);
                 X2 = Convert.ToDouble(TB_Bx.Text);
                 Y2 = Convert.ToDouble(TB_By.Text);
-                TB_L12.Text = Ugol(X1, Y1, X2, Y2).ToString();
-                UgolRef(X1, Y1, X2, Y2, ref Ans);
-                TB_L12Ref.Text = Ans.ToString();
+                TT = Task1.Ugol(X1, Y1, X2, Y2);
+                Task1.output(TB_L12, TT);
+                Task1.UgolRef(X1, Y1, X2, Y2, ref Ans);
+                Task1.output(TB_L12Ref, Ans);
+
+                // TB_L12.Text = Ugol(X1, Y1, X2, Y2).ToString();
+                // UgolRef(X1, Y1, X2, Y2, ref Ans);
+                // TB_L12Ref.Text = Ans.ToString();
 
                 //B-C
                 X1 = Convert.ToDouble(TB_Bx.Text);
                 Y1 = Convert.ToDouble(TB_By.Text);
                 X2 = Convert.ToDouble(TB_Cx.Text);
                 Y2 = Convert.ToDouble(TB_Cy.Text);
-                TB_L23.Text = Ugol(X1, Y1, X2, Y2).ToString();
-                UgolRef(X1, Y1, X2, Y2, ref Ans);
-                TB_L23Ref.Text = Ans.ToString();
+                TT = Task1.Ugol(X1, Y1, X2, Y2);
+                Task1.output(TB_L23, TT);
+                Task1.UgolRef(X1, Y1, X2, Y2, ref Ans);
+                Task1.output(TB_L23Ref, Ans);
+
+                //TB_L23.Text = Ugol(X1, Y1, X2, Y2).ToString();
+                //UgolRef(X1, Y1, X2, Y2, ref Ans);
+                //TB_L23Ref.Text = Ans.ToString();
 
                 //A-C
                 X1 = Convert.ToDouble(TB_Ax.Text);
                 Y1 = Convert.ToDouble(TB_Ay.Text);
                 X2 = Convert.ToDouble(TB_Cx.Text);
                 Y2 = Convert.ToDouble(TB_Cy.Text);
-                TB_L13.Text = Ugol(X1, Y1, X2, Y2).ToString();
-                UgolRef(X1, Y1, X2, Y2, ref Ans);
-                TB_L13Ref.Text = Ans.ToString();
+                TT = Task1.Ugol(X1, Y1, X2, Y2);
+                Task1.output(TB_L13, TT);
+                Task1.UgolRef(X1, Y1, X2, Y2, ref Ans);
+                Task1.output(TB_L13Ref, Ans);
+
+                //TB_L13.Text = Ugol(X1, Y1, X2, Y2).ToString();
+                //UgolRef(X1, Y1, X2, Y2, ref Ans);
+                //TB_L13Ref.Text = Ans.ToString();
             } catch
             {MessageBox.Show("Проверьте данные и попробуйте еще раз.", "Что то пошло не так при попытке расчета.",MessageBoxButtons.OK,MessageBoxIcon.Error);}
         }
@@ -460,7 +475,22 @@ namespace _9P_Project
             Controls.Add(LB_C_E);
         }
 
-        private double Ugol (double X1, double Y1, double X2, double Y2)
+        class Task1
+        {
+            public static double Ugol(double X1, double Y1, double X2, double Y2)
+            {
+                if (X2 == 0 || Y2 == 0 || X1 == 0 || Y1 == 0) return 0;
+                return (X1 * X2) + (Y1 * Y2) / (Math.Sqrt((X1 * X1) * (Y1 * Y1))) * (Math.Sqrt((X2 * X2) * (Y2 * Y2)));
+            }
+            public static void UgolRef(double X1, double Y1, double X2, double Y2, ref double Ans)
+            { Ans = Ugol(X1, Y1, X2, Y2); }
+
+            public static void output (TextBox TB_out, double Ans)
+            {TB_out.Text = Ans.ToString();}
+
+        }
+
+ /*      private double Ugol (double X1, double Y1, double X2, double Y2)
         {
             if (X2 == 0 || Y2 == 0 || X1 == 0 || Y1 == 0) return 0;
             return (X1 * X2) + (Y1 * Y2) / (Math.Sqrt((X1 * X1) * (Y1 * Y1))) * (Math.Sqrt((X2 * X2) * (Y2 * Y2)));
@@ -468,7 +498,7 @@ namespace _9P_Project
 
         void UgolRef (double X1, double Y1, double X2, double Y2, ref double Ans)
         {Ans = Ugol(X1, Y1, X2, Y2);}
-
+ */
         private void CreateAns()
         {
             Label LB_L12 = new Label();
