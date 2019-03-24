@@ -13,10 +13,6 @@ namespace _9P_Project
 {
     public partial class LB2_Main : Form
     {
-        public LB2_Main()
-        {
-            InitializeComponent();
-        }
         //Exp text (description)
         Label Desc1 = new Label();
 
@@ -48,6 +44,10 @@ namespace _9P_Project
 
         //Max(Z)
         TextBox TB_Max = new TextBox();
+        public LB2_Main()
+        {
+            InitializeComponent();
+        }
 
         private void LB2_Main_Load(object sender, EventArgs e)
         {
@@ -112,77 +112,41 @@ namespace _9P_Project
                 LB_MoreThanOne.Items.Add("Значения при Х > 1");
                 LB_LessThanZero.Items.Add("Значения при Х < 0");
                 LB_EqualZero.Items.Add("Значения при других Х");
-
-                // while (Xs<=Xe)
                 for (; Xs <= Xe; Xs = Xs + H)
-                {
-                    double LocPer=double.MinValue;
-                    if (Xs > 1)
-                    { double Vivv = Class1.Ans(B, C, Xs);
-                        Class1.Viv(LB_MoreThanOne, Vivv);
-                        LocPer = maxx(Vivv, LocPer);
-                    }
-                    // LB_MoreThanOne.Items.Add(Ans(B,C,Xs));
-                    //{ LB_MoreThanOne.Items.Add(Class1.Ans(B, C, Xs)); }
-                    else
-                    {
-                        if (Xs < 0)
-                        { double Vivv = Class1.Ans(B, C, Xs);
-                            Class1.Viv(LB_LessThanZero, Vivv);
-                            LocPer = maxx(Vivv, LocPer);
-                        }
-                        // LB_LessThanZero.Items.Add(Ans(B, C, Xs));
-                        //LB_LessThanZero.Items.Add(Class1.Ans(B, C, Xs)); 
-                        else
-                        { double Vivv = Class1.Ans(B, C, Xs);
-                            Class1.Viv(LB_EqualZero, Vivv);
-                            LocPer = maxx(Vivv, LocPer);
-                        }
-                        //LB_EqualZero.Items.Add(Ans(B, C, Xs));
-                        // LB_EqualZero.Items.Add(Class1.Ans(B, C, Xs));
-                    }
-                    //Xs = Xs + H;
-                    TB_Max.Text = LocPer.ToString();
-                }
+                { Resh(B, C, Xs, Xe, H); }
+                TB_Max.Text = Resh(B, C, Xs, Xe, H).ToString();
             }
-            // Поиск максимума на отрезке
-            /*               
-                    int nn1 = LB_MoreThanOne.Items.Count; int nn2 = LB_LessThanZero.Items.Count; int nn3 = LB_EqualZero.Items.Count;
-                    double MaxTable1 =0, MaxTable2=0, MaxTable3=0;
-                    while (nn1 != 1)
-                    {
-                        LB_MoreThanOne.SelectedIndex = nn1-1;
-                        if (MaxTable1 < Convert.ToDouble(LB_MoreThanOne.GetItemText(LB_MoreThanOne.SelectedItem)))
-                        { MaxTable1 = Convert.ToDouble(LB_MoreThanOne.GetItemText(LB_MoreThanOne.SelectedItem)); }
-                        else { nn1--; }
-                    }
-                    while (nn2 != 1)
-                    {
-                        LB_LessThanZero.SelectedIndex = nn2 - 1;
-                        if (MaxTable2 < Convert.ToDouble(LB_LessThanZero.GetItemText(LB_LessThanZero.SelectedItem)))
-                        { MaxTable2 = Convert.ToDouble(LB_LessThanZero.GetItemText(LB_LessThanZero.SelectedItem)); }
-                        else { nn2--; }
-                    }
-
-                    while (nn3 != 1)
-                    {
-                        LB_EqualZero.SelectedIndex = nn3 - 1;
-                        if (MaxTable3 < Convert.ToDouble(LB_EqualZero.GetItemText(LB_EqualZero.SelectedItem)))
-                        { MaxTable3 = Convert.ToDouble(LB_EqualZero.GetItemText(LB_EqualZero.SelectedItem)); }
-                        else { nn3--; }
-                    }
-
-                    if (MaxTable1 > MaxTable2)
-                    { TB_Max.Text = MaxTable1.ToString(); }
-                    else { TB_Max.Text = MaxTable2.ToString(); }
-
-
-                    if (Convert.ToDouble(TB_Max.Text) < MaxTable3)
-                    { TB_Max.Text = MaxTable3.ToString(); }
-                }
-             */
             catch
             { MessageBox.Show("Проверьте данные и попробуйте еще раз.", "Что то пошло не так при попытке расчета.", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+        }
+        private double Resh(double B, double C, double Xs, double Xe, double H)
+        {
+            
+                double LocPer = double.MinValue;
+                if (Xs > 1)
+                {
+                    double Vivv = Class1.Ans(B, C, Xs);
+                    Class1.Viv(LB_MoreThanOne, Vivv);
+                    LocPer = maxx(Vivv, LocPer);
+                    return LocPer;
+                }
+                else
+                {
+                    if (Xs < 0)
+                    {
+                        double Vivv = Class1.Ans(B, C, Xs);
+                        Class1.Viv(LB_LessThanZero, Vivv);
+                        LocPer = maxx(Vivv, LocPer);
+                        return LocPer;
+                    }
+                    else
+                    {
+                        double Vivv = Class1.Ans(B, C, Xs);
+                        Class1.Viv(LB_EqualZero, Vivv);
+                        LocPer = maxx(Vivv, LocPer);
+                        return LocPer;
+                    } 
+                }
         }
 
         // Поиск максимума на отрезке
@@ -193,18 +157,6 @@ namespace _9P_Project
             else
                 return y;
         }
-        /*   private double Ans(double B, double C, double X)
-           {
-               double LocalPEr;
-                   if (X > 1)
-                   {return X * (Math.Sqrt(B * B + C * C)); }
-                   if (X < 0)
-                   {
-                   LocalPEr = Math.Min(Math.Sqrt(B), X * X);
-                       return Math.Min(LocalPEr, X + C);
-                   }
-               return Math.Max(Math.Log(B), X + C);
-           }*/
 
         private void CreatePointB()
         {
