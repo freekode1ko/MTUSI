@@ -1,0 +1,58 @@
+c:\users\freek\source\repos\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+c:\users\freek\source\repos\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+c:\users\freek\source\repos\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+c:\users\freek\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csprojAssemblyReference.cache
+c:\users\freek\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+c:\users\freek\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+c:\users\freek\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+c:\users\freek\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+c:\users\freek\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+c:\users\freek\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+C:\Users\freek\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.MainForm.resources
+C:\Users\freek\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form2.resources
+C:\Users\freek\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form3.resources
+C:\Users\freek\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form4.resources
+C:\Users\freek\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csprojAssemblyReference.cache
+C:\Users\freek\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+C:\Users\freek\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form2.resources
+C:\Users\freek\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form3.resources
+C:\Users\freek\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form4.resources
+C:\Users\freek\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.MainForm.resources
+C:\Users\freek\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+C:\Users\freek\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+C:\Users\freek\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+C:\Users\freek\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+C:\Users\freek\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+C:\Users\freek\Desktop\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+C:\Users\freek\Desktop\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+C:\Users\freek\Desktop\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+C:\Users\freek\Desktop\Krs\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+C:\Users\freek\Desktop\Krs\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+C:\Users\freek\Desktop\Krs\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+C:\Users\freek\Desktop\Krs\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+C:\Users\freek\Desktop\Krs\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form2.resources
+C:\Users\freek\Desktop\Krs\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form3.resources
+C:\Users\freek\Desktop\Krs\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form4.resources
+C:\Users\freek\Desktop\Krs\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.MainForm.resources
+C:\Users\freek\Desktop\Krs\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+C:\Users\freek\Desktop\Krs\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+C:\Users\freek\Desktop\Krs\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+C:\Users\freek\Desktop\Krs\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+C:\Users\freek\Desktop\Krs\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+C:\Users\freek\Desktop\Krs\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csprojAssemblyReference.cache
+E:\ElderShit\OldDesk\MTYSI\17\vm\Krs\rl - Copy\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+E:\ElderShit\OldDesk\MTYSI\17\vm\Krs\rl - Copy\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+E:\ElderShit\OldDesk\MTYSI\17\vm\Krs\rl - Copy\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+E:\ElderShit\OldDesk\MTYSI\17\vm\Krs\rl - Copy\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csprojAssemblyReference.cache
+E:\ElderShit\OldDesk\MTYSI\17\vm\Krs\rl - Copy\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+E:\ElderShit\OldDesk\MTYSI\17\vm\Krs\rl - Copy\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form2.resources
+E:\ElderShit\OldDesk\MTYSI\17\vm\Krs\rl - Copy\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form3.resources
+E:\ElderShit\OldDesk\MTYSI\17\vm\Krs\rl - Copy\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form4.resources
+E:\ElderShit\OldDesk\MTYSI\17\vm\Krs\rl - Copy\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.MainForm.resources
+E:\ElderShit\OldDesk\MTYSI\17\vm\Krs\rl - Copy\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+E:\ElderShit\OldDesk\MTYSI\17\vm\Krs\rl - Copy\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+E:\ElderShit\OldDesk\MTYSI\17\vm\Krs\rl - Copy\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+E:\ElderShit\OldDesk\MTYSI\17\vm\Krs\rl - Copy\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+E:\ElderShit\OldDesk\MTYSI\17\vm\Krs\rl - Copy\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+E:\ElderShit\OldDesk\MTYSI\17\vm\Krs\rl - Copy\WindowsFormsApp3\bin\Debug\ZedGraph.dll
+E:\ElderShit\OldDesk\MTYSI\17\vm\Krs\rl - Copy\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CopyComplete
