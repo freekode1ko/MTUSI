@@ -26,8 +26,6 @@ namespace ClassLibraryLab2
             { return X * (Math.Sqrt(B * B + C * C)); }
             if (X < 0)
             {
-                //LocalPEr = Math.Min(Math.Sqrt(B), X * X);
-                // return Math.Min(LocalPEr, X + C);
                 if (Math.Sqrt(B) < X * X)
                 {
                     LocalPEr = Math.Sqrt(B);
@@ -37,34 +35,22 @@ namespace ClassLibraryLab2
                     if (LocalPEr < X + C)
                         return LocalPEr;
                 }
-               // LocalPEr = minn(Math.Sqrt(B), X * X);
-               //  return minn(LocalPEr, X + C);
             }
-            //return Math.Max(Math.Log(B), X + C);
-            return maxx(Math.Log(B), X + C);
+            if (Math.Log(B) > X + C)
+                return Math.Log(B);
+            else return X + C;
         }
 
-        //Методы для вычисления максимума и минимума
-        static double maxx(double x, double y)
-        {
-            if (x > y)
-                return x;
-            else
-                return y;
-        }
-        static double minn(double x, double y)
-        {
-            if (x < y)
-                return x;
-            else
-                return y;
-        }
         /// <summary>
-        /// Вывод ответа
+        /// Вывод ответа в ListBox
         /// </summary>
         public static void Viv(ListBox L, double x)
-        {
-            L.Items.Add(x);
-        }
+        {L.Items.Add(x);}
+
+        /// <summary>
+        /// Вывод ответа в TextBox
+        /// </summary>
+        public static void Viv2(TextBox T, double x)
+        { T.Text = x.ToString(); }
     }
 }
