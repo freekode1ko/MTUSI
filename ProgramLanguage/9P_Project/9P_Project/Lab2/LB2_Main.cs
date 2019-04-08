@@ -122,7 +122,7 @@ namespace _9P_Project
                 e.Handled = true;
             }
         }
-
+        //Обработчик события нажатия кнопки 
         private void Run_click(object sender, EventArgs e)
         {   
             double B, C, Xs, Xe, H; //task1
@@ -139,14 +139,13 @@ namespace _9P_Project
                 Xs = Convert.ToDouble(TB_Xs.Text);
                 Xe = Convert.ToDouble(TB_Xe.Text);
                 H = Convert.ToDouble(TB_H.Text);
-
+                //task1
                 LB_MoreThanOne.Items.Add("Значения при Х > 1");
                 LB_LessThanZero.Items.Add("Значения при Х < 0");
                 LB_EqualZero.Items.Add("Значения при других Х");
                 for (; Xs <= Xe; Xs = Xs + H)
                 { TB_Max.Text = Resh(B, C, Xs, Xe, H).ToString(); }
-               // TB_Max.Text = Resh(B, C, Xs, Xe, H).ToString();
-
+                //task2
                 B2 = Convert.ToDouble(TB_B2.Text);
                 C2 = Convert.ToDouble(TB_C2.Text);
                 Xe2 = Convert.ToDouble(TB_Se.Text);
@@ -156,6 +155,7 @@ namespace _9P_Project
             catch
             { MessageBox.Show("Проверьте данные и попробуйте еще раз.", "Что то пошло не так при попытке расчета.", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
+        //Метод определения вывода табуляции в нужный блок
         private double Resh(double B, double C, double Xs, double Xe, double H)
         {
            
