@@ -367,6 +367,7 @@ namespace PLDryabkovcpp {
 			this->Controls->Add(this->button1);
 			this->Name = L"MyForm";
 			this->Text = L"Лабораторная работа №4";
+			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -402,6 +403,8 @@ namespace PLDryabkovcpp {
 	}
 
 private: System::Void label5_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e) {
 }
 };
 };
