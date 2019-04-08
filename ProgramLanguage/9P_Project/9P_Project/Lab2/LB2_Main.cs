@@ -13,7 +13,7 @@ namespace _9P_Project
 {
     public partial class LB2_Main : Form
     {
-        //Exp text (description)
+        //Exp text (description task 1)
         Label Desc1 = new Label();
 
         //Point B
@@ -44,6 +44,26 @@ namespace _9P_Project
 
         //Max(Z)
         TextBox TB_Max = new TextBox();
+
+        //Exp text (description task 2)
+        Label Desc3 = new Label();
+
+        //Point B
+        Label LB_B2 = new Label();
+        TextBox TB_B2 = new TextBox();
+
+        //Point C
+        Label LB_C2 = new Label();
+        TextBox TB_C2 = new TextBox();
+
+        //End of Segment
+        Label LB_Se = new Label();
+        TextBox TB_Se = new TextBox();
+
+        //Ans to TextBox
+        Label LB_Ans = new Label();
+        TextBox TB_Ans = new TextBox();
+
         public LB2_Main()
         {
             InitializeComponent();
@@ -53,14 +73,24 @@ namespace _9P_Project
         {
             
             Desc1.Location = new Point(10, 30);
-            Desc1.Size = new Size(165, 15);
-            Desc1.Text = "Задайте B,C, Отрезок и шаг:";
+            Desc1.Size = new Size(250, 15);
+            Desc1.Text = "Задание 1: Задайте B,C, Отрезок и шаг:";
             Controls.Add(Desc1);
 
             CreatePointB();
             CreatePointC();
             CreatePointX();
             CreateStepH();
+
+            Desc3.Location = new Point(TB_H.Location.X + TB_H.Width + 150, Desc1.Location.Y);
+            Desc3.Size = new Size(350, 15);
+            Desc3.Text = "Задание 2: Задайте Свободные переменный и конец отрезка:";
+            Controls.Add(Desc3);
+
+            CreatePointB2();
+            CreatePointC2();
+            CreatePointSe();
+            CreateTBAns();
 
             Desc2.Location = new Point(Desc1.Location.X, LB_X_S.Location.Y + LB_X_S.Height + 80);
             Desc2.Size = new Size(165, 15);
@@ -95,7 +125,8 @@ namespace _9P_Project
 
         private void Run_click(object sender, EventArgs e)
         {   
-            double B, C, Xs, Xe, H;
+            double B, C, Xs, Xe, H; //task1
+            double B2, C2, Xe2; //task2
             try
             {
                 LB_MoreThanOne.Items.Clear();
@@ -113,22 +144,29 @@ namespace _9P_Project
                 LB_LessThanZero.Items.Add("Значения при Х < 0");
                 LB_EqualZero.Items.Add("Значения при других Х");
                 for (; Xs <= Xe; Xs = Xs + H)
-                { Resh(B, C, Xs, Xe, H); }
-                TB_Max.Text = Resh(B, C, Xs, Xe, H).ToString();
+                { TB_Max.Text = Resh(B, C, Xs, Xe, H).ToString(); }
+               // TB_Max.Text = Resh(B, C, Xs, Xe, H).ToString();
+
+                B2 = Convert.ToDouble(TB_B2.Text);
+                C2 = Convert.ToDouble(TB_C2.Text);
+                Xe2 = Convert.ToDouble(TB_Se.Text);
+                double VivvTask2 = Class1.Ans(B2, C2, Xe2);
+                Class1.Viv2(TB_Ans, VivvTask2);
             }
             catch
             { MessageBox.Show("Проверьте данные и попробуйте еще раз.", "Что то пошло не так при попытке расчета.", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
         private double Resh(double B, double C, double Xs, double Xe, double H)
         {
-            
+           
                 double LocPer = double.MinValue;
                 if (Xs > 1)
                 {
                     double Vivv = Class1.Ans(B, C, Xs);
                     Class1.Viv(LB_MoreThanOne, Vivv);
-                    LocPer = maxx(Vivv, LocPer);
-                    return LocPer;
+                if (Vivv > LocPer) // Поиск максимума на отрезке [1; double.MaxValue]
+                    LocPer = Vivv;
+                return LocPer;
                 }
                 else
                 {
@@ -136,26 +174,19 @@ namespace _9P_Project
                     {
                         double Vivv = Class1.Ans(B, C, Xs);
                         Class1.Viv(LB_LessThanZero, Vivv);
-                        LocPer = maxx(Vivv, LocPer);
-                        return LocPer;
+                    if (Vivv > LocPer) // Поиск максимума на отрезке [double.MinValue; 0]
+                        LocPer = Vivv;
+                    return LocPer;
                     }
                     else
                     {
                         double Vivv = Class1.Ans(B, C, Xs);
                         Class1.Viv(LB_EqualZero, Vivv);
-                        LocPer = maxx(Vivv, LocPer);
-                        return LocPer;
+                    if (Vivv > LocPer) // Поиск максимума на отрезке [0;1]
+                        LocPer = Vivv;
+                    return LocPer;
                     } 
                 }
-        }
-
-        // Поиск максимума на отрезке
-        private double maxx(double x, double y)
-        {
-            if (x > y)
-                return x;
-            else
-                return y;
         }
 
         private void CreatePointB()
@@ -251,6 +282,59 @@ namespace _9P_Project
             Controls.Add(TB_Max);
         }
 
+        private void CreatePointB2()
+        {
+            //B2
+            LB_B2.Location = new Point(Desc3.Location.X, Desc3.Location.Y + Desc3.Height + 20);
+            LB_B2.Width = 20;
+            LB_B2.Text = "B: ";
+            Controls.Add(LB_B2);
+
+            TB_B2.Size = new Size(55, 20);
+            TB_B2.Location = new Point(LB_B2.Location.X + LB_B2.Width + 1, LB_B2.Location.Y - 3);
+            TB_B2.KeyPress += TB_KeuPress;
+            Controls.Add(TB_B2);
+        }
+        private void CreatePointC2()
+        {           
+            // C2
+            LB_C2.Location = new Point(LB_B2.Location.X + LB_C2.Width + 10, Desc3.Location.Y + Desc3.Height + 20);
+            LB_C2.Width = 20;
+            LB_C2.Text = "C: ";
+            Controls.Add(LB_C2);
+
+            TB_C2.Size = new Size(55, 20);
+            TB_C2.Location = new Point(LB_C2.Location.X + LB_C2.Width + 1, LB_C2.Location.Y - 3);
+            TB_C2.KeyPress += TB_KeuPress;
+            Controls.Add(TB_C2);
+        }
+        private void CreatePointSe()
+        {
+            //End of segment
+            LB_Se.Location = new Point(Desc3.Location.X, LB_B2.Location.Y + LB_B2.Height + 20);
+            LB_Se.Width = 20;
+            LB_Se.Text = "Х: ";
+            Controls.Add(LB_Se);
+
+            TB_Se.Size = new Size(55, 20);
+            TB_Se.Location = new Point(LB_Se.Location.X + LB_Se.Width + 1, LB_Se.Location.Y - 3);
+            TB_Se.KeyPress += TB_KeuPress;
+            Controls.Add(TB_Se);
+        }
+        private void CreateTBAns()
+        {
+            //End of segment
+            LB_Ans.Location = new Point(Desc3.Location.X, LB_Se.Location.Y + LB_Se.Height + 20);
+            LB_Ans.Width = 20;
+            LB_Ans.Text = "Z: ";
+            Controls.Add(LB_Ans);
+
+            TB_Ans.Size = new Size(255, 20);
+            TB_Ans.Location = new Point(LB_Ans.Location.X + LB_Ans.Width + 1, LB_Ans.Location.Y - 3);
+            TB_Ans.Enabled = false;
+            Controls.Add(TB_Ans);
+        }
+        
         private void LB1_main_FormClosing(object sender, EventArgs e)
         {
             MainPage MP = new MainPage();
