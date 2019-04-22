@@ -43,6 +43,7 @@ namespace DryabkovLab6cpp {
 	private: System::Windows::Forms::Button^  button1;
 	private: System::Windows::Forms::Button^  button2;
 
+
 	private:
 		/// <summary>
 		/// Required designer variable.
@@ -174,8 +175,27 @@ namespace DryabkovLab6cpp {
 		try
 		{
 			String^g = Interaction::InputBox("Введите количество элементов массива = ", "Введите значение", "", -1, -1);
-			int n = Convert::ToInt16(g);
-			dataGridView2->Columns->RemoveAt(n);//удаляем колонку
+			int k = Convert::ToInt16(g);
+			// Создание массива разморности равному колличеству столбцов
+			double *masPtz = new double[dataGridView2->ColumnCount];
+			// Заполнение массива
+			for (int i = 0; i < dataGridView2->ColumnCount; i++)
+			{masPtz[i] = System::Convert::ToDouble(dataGridView2->Rows[1]->Cells[i]->Value);}
+			// Удаление выброного элемента массива
+			int len = 0;
+			len= dataGridView2->ColumnCount;
+			for (int ix = k; ix < len - 1; ix++)
+			{
+				dataGridView2->Rows[0]->Cells[ix]->Value = dataGridView2->Rows[0]->Cells[ix + 1]->Value;
+				masPtz[ix] = masPtz[ix + 1];
+			} len--;
+			// Заполнение и вывод массива
+			for (int i = 0; i < len; i++)
+			{	dataGridView2->Rows[1]->Cells[i]->Value = masPtz[i];
+				dataGridView2->ColumnCount = len;}
+			//Lab6::output_mas(masPtz, len, dataGridView2);
+			//Очистка памяти
+			delete masPtz;
 		}
 		catch(Exception^ e){}
 	}
