@@ -1,3 +1,4 @@
 ﻿  Laba8Library.cpp
 e:\git\mtusi\programlanguage\laba8library\laba8library\laba8library.cpp(19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  .NETFramework,Version=v4.6.1.AssemblyAttributes.cpp
   Laba8Library.vcxproj -> E:\GIT\MTUSI\ProgramLanguage\Laba8Library\Debug\Laba8Library.dll
