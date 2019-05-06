@@ -24,3 +24,5 @@ Class Laba6Library.Lab6: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     set_count(Double*, Int32, Double, Int32* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
     set_mas(Double*, Double*, Int32, Double): PrivateScope, Public, Static, HideBySig
     vivod_Label(Double, Label): PrivateScope, Public, Static, HideBySig
+    aaa(Double*, Int32, DataGridView): PrivateScope, Public, Static, HideBySig
+    out_aaa(Double*, DataGridView): PrivateScope, Public, Static, HideBySig
