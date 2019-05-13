@@ -70,6 +70,8 @@ namespace DryabkovLab6cpp {
 			// 
 			this->dataGridView1->AllowUserToResizeColumns = false;
 			this->dataGridView1->AllowUserToResizeRows = false;
+			this->dataGridView1->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
+			this->dataGridView1->AutoSizeRowsMode = System::Windows::Forms::DataGridViewAutoSizeRowsMode::AllCells;
 			this->dataGridView1->BackgroundColor = System::Drawing::SystemColors::Control;
 			this->dataGridView1->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->dataGridView1->ColumnHeadersBorderStyle = System::Windows::Forms::DataGridViewHeaderBorderStyle::None;
@@ -78,12 +80,15 @@ namespace DryabkovLab6cpp {
 			this->dataGridView1->Location = System::Drawing::Point(19, 12);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowHeadersVisible = false;
+			this->dataGridView1->RowHeadersWidth = 21;
 			this->dataGridView1->ScrollBars = System::Windows::Forms::ScrollBars::Horizontal;
 			this->dataGridView1->Size = System::Drawing::Size(708, 69);
 			this->dataGridView1->TabIndex = 0;
 			// 
 			// dataGridView2
 			// 
+			this->dataGridView2->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
+			this->dataGridView2->AutoSizeRowsMode = System::Windows::Forms::DataGridViewAutoSizeRowsMode::AllCells;
 			this->dataGridView2->BackgroundColor = System::Drawing::SystemColors::Control;
 			this->dataGridView2->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
@@ -175,7 +180,7 @@ namespace DryabkovLab6cpp {
 		try
 		{
 			//Получение № элемента на удаление
-			String^g = Interaction::InputBox("Введите количество элементов массива = ", "Введите значение", "", -1, -1);
+			String^g = Interaction::InputBox("Введите номер элемента для его удаления ", "Введите значение", "", -1, -1);
 			int k = Convert::ToInt16(g);
 			//Создание нового массива
 			double *masPtz = new double[dataGridView2->ColumnCount];
