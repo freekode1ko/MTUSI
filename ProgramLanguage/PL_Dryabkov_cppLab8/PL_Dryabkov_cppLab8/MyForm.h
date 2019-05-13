@@ -45,6 +45,7 @@ namespace PLDryabkovcppLab8 {
 	private: System::Windows::Forms::Label^  label3;
 	private: System::Windows::Forms::Button^  button1;
 
+
 	private:
 		/// <summary>
 		/// Required designer variable.
@@ -72,6 +73,8 @@ namespace PLDryabkovcppLab8 {
 			// 
 			// dataGridView1
 			// 
+			this->dataGridView1->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
+			this->dataGridView1->AutoSizeRowsMode = System::Windows::Forms::DataGridViewAutoSizeRowsMode::AllCells;
 			this->dataGridView1->BackgroundColor = System::Drawing::SystemColors::Control;
 			this->dataGridView1->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
@@ -84,6 +87,8 @@ namespace PLDryabkovcppLab8 {
 			// 
 			// dataGridView2
 			// 
+			this->dataGridView2->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
+			this->dataGridView2->AutoSizeRowsMode = System::Windows::Forms::DataGridViewAutoSizeRowsMode::AllCells;
 			this->dataGridView2->BackgroundColor = System::Drawing::SystemColors::Control;
 			this->dataGridView2->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
@@ -96,6 +101,8 @@ namespace PLDryabkovcppLab8 {
 			// 
 			// dataGridView3
 			// 
+			this->dataGridView3->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
+			this->dataGridView3->AutoSizeRowsMode = System::Windows::Forms::DataGridViewAutoSizeRowsMode::AllCells;
 			this->dataGridView3->BackgroundColor = System::Drawing::SystemColors::Control;
 			this->dataGridView3->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->dataGridView3->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
@@ -130,7 +137,8 @@ namespace PLDryabkovcppLab8 {
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(85, 13);
 			this->label3->TabIndex = 3;
-			this->label3->Text = L"Упорядоченый:";
+			this->label3->Text = L"Обработанный:";
+			this->label3->Visible = false;
 			// 
 			// button1
 			// 
@@ -175,8 +183,8 @@ namespace PLDryabkovcppLab8 {
 			Laba8::enter_mas(masPtr, n);
 			Laba8::output_mas(masPtr, n, dataGridView1);
 			// Подсчет суммы элементов, имеющих четный индекс
-			double Sum = Laba8::sum_mas(masPtr, n); \
-				Laba8::vivod_Label(Sum, label1);
+			double Sum = Laba8::sum_mas(masPtr, n); 
+			Laba8::vivod_Label(Sum, label1);
 			// Подсчет длинны второго массива
 			int k = 0;
 			Laba8::set_count(masPtr, n, Sum, k);
@@ -187,11 +195,18 @@ namespace PLDryabkovcppLab8 {
 			Laba8::set_mas(masPtr, rezmasPtr, n, Sum);
 			Laba8::output_mas(rezmasPtr, k, dataGridView2);
 
-			// Фильрация массива методом пузырика
-			double *rezmasPtr2 = new double[k];
-			Laba8::CopyArray(rezmasPtr, rezmasPtr2);
-			Laba8::puzir(rezmasPtr2, k);
-			Laba8::output_mas(rezmasPtr2, k, dataGridView3);
+			// Заполнение третего массива для его обработки
+			double *testarr = rezmasPtr;
+			Laba8::output_mas(testarr, k, dataGridView3);
+
+			// Выборка нужного элемента и его удаление
+			String^gg = Interaction::InputBox("Введите номер элемента для его удаления = ", " Введите значение ", "", -1, -1);
+			int kk = Convert::ToInt16(gg);
+			double *rezmasPtr2 = new double[dataGridView2->ColumnCount];
+			Laba8::aaa(rezmasPtr2, kk, dataGridView3);
+			Laba8::out_aaa(rezmasPtr2, dataGridView3);
+
+			
 			// Заполнение Базы данных
 			Laba8::add();
 			Laba8::add_struct();

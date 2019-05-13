@@ -1,3 +1,3 @@
 ﻿  MyForm.cpp
-e:\git\mtusi\programlanguage\pl_dryabkov_cpplab8\pl_dryabkov_cpplab8\myform.h(204): warning C4101: 'e': unreferenced local variable
+e:\git\mtusi\programlanguage\pl_dryabkov_cpplab8\pl_dryabkov_cpplab8\myform.h(219): warning C4101: 'e': unreferenced local variable
   PL_Dryabkov_cppLab8.vcxproj -> E:\GIT\MTUSI\ProgramLanguage\PL_Dryabkov_cppLab8\Debug\PL_Dryabkov_cppLab8.exe
