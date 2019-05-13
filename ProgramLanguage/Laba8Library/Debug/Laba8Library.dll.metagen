@@ -21,7 +21,6 @@ Class Laba8Library.Laba8: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
     enter_mas(Double*, Int32): PrivateScope, Public, Static, HideBySig
-    puzir(Double*, Int32): PrivateScope, Public, Static, HideBySig
     output_mas(Double*, Int32, DataGridView): PrivateScope, Public, Static, HideBySig
     sum_mas(Double*, Int32): PrivateScope, Public, Static, HideBySig
     set_count(Double*, Int32, Double, Int32* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
@@ -31,3 +30,5 @@ Class Laba8Library.Laba8: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     add_struct(): PrivateScope, Public, Static, HideBySig
     add_zap(Double*, Double*, Double*, Int32, Int32): PrivateScope, Public, Static, HideBySig
     CopyArray(Double*, Double*): PrivateScope, Public, Static, HideBySig
+    aaa(Double*, Int32, DataGridView): PrivateScope, Public, Static, HideBySig
+    out_aaa(Double*, DataGridView): PrivateScope, Public, Static, HideBySig
