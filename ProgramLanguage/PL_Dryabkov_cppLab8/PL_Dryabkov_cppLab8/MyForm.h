@@ -171,10 +171,10 @@ namespace PLDryabkovcppLab8 {
 			this->PerformLayout();
 
 		}
+
 #pragma endregion
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) 
-	{
-		try {
+	{try {
 			// Создание первого массива
 			String^g = Interaction::InputBox("Введите количество элементов массива = ", "Введите значение", "", -1, -1);
 			int n = Convert::ToInt16(g);
@@ -190,23 +190,18 @@ namespace PLDryabkovcppLab8 {
 			Laba8::set_count(masPtr, n, Sum, k);
 			// Создание второго массива
 			double *rezmasPtr = new double[k];
-
 			// Заполнение и вывод второго массива
 			Laba8::set_mas(masPtr, rezmasPtr, n, Sum);
 			Laba8::output_mas(rezmasPtr, k, dataGridView2);
-
 			// Заполнение третего массива для его обработки
 			double *testarr = rezmasPtr;
 			Laba8::output_mas(testarr, k, dataGridView3);
-
 			// Выборка нужного элемента и его удаление
 			String^gg = Interaction::InputBox("Введите номер элемента для его удаления = ", " Введите значение ", "", -1, -1);
 			int kk = Convert::ToInt16(gg);
 			double *rezmasPtr2 = new double[dataGridView2->ColumnCount];
 			Laba8::aaa(rezmasPtr2, kk, dataGridView3);
-			Laba8::out_aaa(rezmasPtr2, dataGridView3);
-
-			
+			Laba8::out_aaa(rezmasPtr2, dataGridView3);		
 			// Заполнение Базы данных
 			Laba8::add();
 			Laba8::add_struct();
@@ -215,8 +210,7 @@ namespace PLDryabkovcppLab8 {
 			delete rezmasPtr;
 			delete rezmasPtr2;
 			delete masPtr;
-		}
-		catch (Exception^ e){}
+		}catch (Exception^ e){}
 	}
 };
 }
