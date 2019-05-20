@@ -2,15 +2,16 @@
 
 namespace PLDryabkovcpp {
 
-#include <math.h>
 
-	using namespace ClassLibrary1;
+	//using namespace ClassLibrary1;
+	using namespace CPPClass1;
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+
 
 //#include <msclr/marshal_cppstd.h>
 	/// <summary>
@@ -375,7 +376,7 @@ namespace PLDryabkovcpp {
 #pragma endregion
 
 	private: System::Void Result_Click(System::Object^  sender, System::EventArgs^  e) {
-		try {
+		try {/* MY FUNC
 			// Вычисления первого задания
 			double b1 = Class1::vvod(b1_value);
 			double c1 = Class1::vvod(c1_value);
@@ -388,9 +389,19 @@ namespace PLDryabkovcpp {
 			double h = Class1::vvod(h_value);
 			double b = Class1::vvod(b_value);
 			double c = Class1::vvod(c_value);
-			double max = -pow(10, 23);
+			double max = -(Math.Pow(10, 23));
 			Class1::ResultProc(b, c, m, h, n, max, Answer_List);
 			Class1::vivod_TextBox(max, max_value);
+			*/
+			// CPPClass1
+			double a, b, h;
+			double sum = 0;
+			a = Class1::inpd(c1_value);
+			b = Class1::inpd(b1_value);
+			h = Class1::inpd(x_value);
+			Class1::task(a, b, h, sum, Answer_List);
+			Class1::outpd(sum, z_value);
+
 		}
 		catch (Exception^ e) 
 		{
@@ -399,7 +410,7 @@ namespace PLDryabkovcpp {
 	}
 
 	private: System::Void c1_value_KeyPress(System::Object^  sender, System::Windows::Forms::KeyPressEventArgs^  e) {
-		Class1::TypeCheck(c1_value, e);
+		//Class1::TypeCheck(c1_value, e);
 	}
 
 private: System::Void label5_Click(System::Object^  sender, System::EventArgs^  e) {

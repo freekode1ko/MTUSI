@@ -6,6 +6,8 @@ Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934
 	hash=None, flags=None
 Assembly ClassLibrary1, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
 	hash=None, flags=None
+Assembly CPPClass1, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
 Assembly Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
 	hash=None, flags=None
 Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
