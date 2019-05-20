@@ -1,0 +1,3 @@
+﻿  ClassLibraryLab5.cpp
+e:\git\mtusi\programlanguage\classlibrarylab5\classlibrarylab5\classlibrarylab5.cpp(19): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  ClassLibraryLab5.vcxproj -> E:\GIT\MTUSI\ProgramLanguage\ClassLibraryLab5\Debug\ClassLibraryLab5.dll
