@@ -67,6 +67,7 @@ namespace PLDryabkovcpp {
 
 
 	private: System::Windows::Forms::Label^  label12;
+	private: System::Windows::Forms::TextBox^  textBox1;
 
 
 
@@ -98,6 +99,7 @@ namespace PLDryabkovcpp {
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->label12 = (gcnew System::Windows::Forms::Label());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -227,11 +229,19 @@ namespace PLDryabkovcpp {
 			this->label12->Size = System::Drawing::Size(0, 13);
 			this->label12->TabIndex = 8;
 			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(374, 408);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(100, 20);
+			this->textBox1->TabIndex = 9;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(963, 531);
+			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->label12);
 			this->Controls->Add(this->label8);
 			this->Controls->Add(this->label7);
@@ -259,27 +269,20 @@ namespace PLDryabkovcpp {
 	private: System::Void Result_Click(System::Object^  sender, System::EventArgs^  e) {
 		try 
 		{	//task 1
-			double a = Class2::Vvod(c1_value);
-
-			double b = Class2::Vvod(b1_value);
-
-			double x = Class2::Vvod(x_value);
-
-			double rez = Class2::Choose(x, b, a);
-
-			Class2::Vivod(z_value, rez);
+			double a = ClassLibraryLab51::Class1::Vvod(c1_value);
+			double b = ClassLibraryLab51::Class1::Vvod(b1_value);
+			double x = ClassLibraryLab51::Class1::Vvod(x_value);
+			double rez = ClassLibraryLab51::Class1::Choose(x, b, a);
+			ClassLibraryLab51::Class1::Vivod(z_value, rez);
 			
 			//task 2
-			double xx = Class2::VvodL(b_value);
-
-			double eps = Class2::VvodL(c_value);
-
-			Class2::Rebound(eps, xx, Answer_List);
+			double xx = ClassLibraryLab5::Class2::VvodL(b_value);
+			double eps = ClassLibraryLab5::Class2::VvodL(c_value);
+			ClassLibraryLab5::Class2::Rebound(xx, eps, textBox1, Answer_List);
 			
 		}
 		catch (Exception^ e) 
-		{
-			//MessageBox::Show("Error");
+		{//MessageBox::Show("Error");
 		}
 	}
 

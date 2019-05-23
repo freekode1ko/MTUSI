@@ -1,0 +1,4 @@
+﻿  MyForm.cpp
+e:\git\mtusi\programlanguage\pl_dryabkov_cpplab12\pl_dryabkov_cpplab12\myform.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\git\mtusi\programlanguage\pl_dryabkov_cpplab12\pl_dryabkov_cpplab12\myform.h(263): warning C4101: 'e': unreferenced local variable
+  PL_Dryabkov_cppLab12.vcxproj -> E:\GIT\MTUSI\ProgramLanguage\PL_Dryabkov_cppLab12\Debug\PL_Dryabkov_cppLab12.exe

@@ -1,0 +1,5 @@
+﻿  ClassLibrary10.cpp
+e:\git\mtusi\programlanguage\classlibrary10\classlibrary10\classlibrary10.cpp(11): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+e:\git\mtusi\programlanguage\classlibrary10\classlibrary10\classlibrary10.cpp(53): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+e:\git\mtusi\programlanguage\classlibrary10\classlibrary10\classlibrary10.cpp(77): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  ClassLibrary10.vcxproj -> E:\GIT\MTUSI\ProgramLanguage\ClassLibrary10\Debug\ClassLibrary10.dll

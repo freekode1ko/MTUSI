@@ -14,10 +14,13 @@ Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c5619
 Class ClassLibraryLab5.Class2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
-    Rebound(Double, Double, ListBox): PrivateScope, Public, Static, HideBySig
+    Rebound(Double, Double, TextBox, ListBox): PrivateScope, Public, Static, HideBySig
     VvodL(TextBox): PrivateScope, Public, Static, HideBySig
-    Funk(Double, Double, Int32): PrivateScope, Public, Static, HideBySig
+    vivoddouble(Double, TextBox): PrivateScope, Public, HideBySig
     VivodL(Double, ListBox, Double): PrivateScope, Public, Static, HideBySig
+Class ClassLibraryLab51.Class1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
     Choose(Double, Double, Double): PrivateScope, Public, Static, HideBySig
     Vivod(TextBox, Double): PrivateScope, Public, Static, HideBySig
     Vvod(TextBox): PrivateScope, Public, Static, HideBySig

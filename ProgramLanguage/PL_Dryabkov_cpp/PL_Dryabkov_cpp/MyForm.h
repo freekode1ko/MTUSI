@@ -210,38 +210,38 @@ namespace PLDryabkovcpp {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(52, 158);
+			this->label1->Location = System::Drawing::Point(46, 161);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(14, 13);
+			this->label1->Size = System::Drawing::Size(44, 13);
 			this->label1->TabIndex = 3;
-			this->label1->Text = L"C";
+			this->label1->Text = L"Начало";
 			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
 			this->label2->Location = System::Drawing::Point(52, 184);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(14, 13);
+			this->label2->Size = System::Drawing::Size(38, 13);
 			this->label2->TabIndex = 4;
-			this->label2->Text = L"B";
+			this->label2->Text = L"Конец";
 			// 
 			// label3
 			// 
 			this->label3->AutoSize = true;
 			this->label3->Location = System::Drawing::Point(52, 210);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(14, 13);
+			this->label3->Size = System::Drawing::Size(27, 13);
 			this->label3->TabIndex = 5;
-			this->label3->Text = L"X";
+			this->label3->Text = L"Шаг";
 			// 
 			// label4
 			// 
 			this->label4->AutoSize = true;
 			this->label4->Location = System::Drawing::Point(52, 255);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(14, 13);
+			this->label4->Size = System::Drawing::Size(41, 13);
 			this->label4->TabIndex = 6;
-			this->label4->Text = L"Z";
+			this->label4->Text = L"Сумма";
 			// 
 			// label5
 			// 

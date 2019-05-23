@@ -1,0 +1,32 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly ClassLibrary10, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Interop.ADOX.2.8, Version=2.8.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class ClassLibrary10.Class10: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    input_mas2(Int32**, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    max_mas(Int32**, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    output_mas_int(Int32**, Int32, Int32, DataGridView): PrivateScope, Public, Static, HideBySig
+    set_count2(Int32**, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    set_mas(Double**, Double*, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    set_mas2(Int32**, Int32*, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    set_mas3(Int32**, Int32**, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    output_mas_int2(Int32*, Int32, DataGridView): PrivateScope, Public, Static, HideBySig
+    vivod_Label2(Int32, Label): PrivateScope, Public, Static, HideBySig
+    puzir(Int32*, Int32): PrivateScope, Public, Static, HideBySig
+    addArrayToTxt(DataGridView, String): PrivateScope, Public, Static, HideBySig
+    ReadArray(Int32, DataGridView, String): PrivateScope, Public, Static, HideBySig
+    addMatToTxt(DataGridView, String): PrivateScope, Public, Static, HideBySig
+    ReadMat(Int32, Int32, DataGridView, String): PrivateScope, Public, Static, HideBySig

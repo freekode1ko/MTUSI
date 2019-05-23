@@ -135,12 +135,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ClassLibraryLab5.h" />
+    <ClInclude Include="ClassLibraryLab51.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="ClassLibraryLab5.cpp" />
+    <ClCompile Include="ClassLibraryLab51.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
