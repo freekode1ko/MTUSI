@@ -1,0 +1,6 @@
+E:\GIT\MTUSI\ProgramLanguage\ClassLibrary6Sharp\ClassLibrary6Sharp\bin\Debug\ClassLibrary6Sharp.dll
+E:\GIT\MTUSI\ProgramLanguage\ClassLibrary6Sharp\ClassLibrary6Sharp\bin\Debug\ClassLibrary6Sharp.pdb
+E:\GIT\MTUSI\ProgramLanguage\ClassLibrary6Sharp\ClassLibrary6Sharp\obj\Debug\ClassLibrary6Sharp.csprojAssemblyReference.cache
+E:\GIT\MTUSI\ProgramLanguage\ClassLibrary6Sharp\ClassLibrary6Sharp\obj\Debug\ClassLibrary6Sharp.csproj.CoreCompileInputs.cache
+E:\GIT\MTUSI\ProgramLanguage\ClassLibrary6Sharp\ClassLibrary6Sharp\obj\Debug\ClassLibrary6Sharp.dll
+E:\GIT\MTUSI\ProgramLanguage\ClassLibrary6Sharp\ClassLibrary6Sharp\obj\Debug\ClassLibrary6Sharp.pdb
