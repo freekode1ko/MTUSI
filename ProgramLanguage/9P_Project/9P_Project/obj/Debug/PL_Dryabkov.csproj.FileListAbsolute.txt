@@ -85,3 +85,7 @@ C:\Users\freek\Desktop\PlaceForShit\MTUSI_Sec\ProgramLanguage\MTUSI\ProgramLangu
 C:\Users\freek\Desktop\PlaceForShit\MTUSI_Sec\ProgramLanguage\MTUSI\ProgramLanguage\9P_Project\9P_Project\obj\Debug\_9P_Project.MainPage.resources
 C:\Users\freek\Desktop\PlaceForShit\MTUSI_Sec\ProgramLanguage\MTUSI\ProgramLanguage\9P_Project\9P_Project\obj\Debug\_9P_Project.Properties.Resources.resources
 C:\Users\freek\Desktop\PlaceForShit\MTUSI_Sec\ProgramLanguage\MTUSI\ProgramLanguage\9P_Project\9P_Project\obj\Debug\PL_Dryabkov.csproj.GenerateResource.Cache
+E:\GIT\MTUSI\ProgramLanguage\9P_Project\9P_Project\bin\Debug\ClassLibrary6Sharp.dll
+E:\GIT\MTUSI\ProgramLanguage\9P_Project\9P_Project\bin\Debug\ClassLibrary6Sharp.pdb
+E:\GIT\MTUSI\ProgramLanguage\9P_Project\9P_Project\obj\Debug\_9P_Project.LB7_Main.resources
+E:\GIT\MTUSI\ProgramLanguage\9P_Project\9P_Project\obj\Debug\_9P_Project.LB7_Titul.resources

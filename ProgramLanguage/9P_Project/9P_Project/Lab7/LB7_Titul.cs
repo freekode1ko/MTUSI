@@ -16,5 +16,11 @@ namespace _9P_Project
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LB7_Main lb1 = new LB7_Main();
+            lb1.Show();
+        }
     }
 }
