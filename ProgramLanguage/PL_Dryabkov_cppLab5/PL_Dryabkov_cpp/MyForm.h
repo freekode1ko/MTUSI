@@ -259,15 +259,15 @@ namespace PLDryabkovcpp {
 	private: System::Void Result_Click(System::Object^  sender, System::EventArgs^  e) {
 		try 
 		{	//task 1
-			double a = Class2::Vvod(c1_value);
+			double a = ClassLibraryLab51::Class3::Vvod(c1_value);
 
-			double b = Class2::Vvod(b1_value);
+			double b = ClassLibraryLab51::Class3::Vvod(b1_value);
 
-			double x = Class2::Vvod(x_value);
+			double x = ClassLibraryLab51::Class3::Vvod(x_value);
 
-			double rez = Class2::Choose(x, b, a);
+			double rez = ClassLibraryLab51::Class3::Choose(x, b, a);
 
-			Class2::Vivod(z_value, rez);
+			ClassLibraryLab51::Class3::Vivod(z_value, rez);
 			
 			//task 2
 			double xx = Class2::VvodL(b_value);

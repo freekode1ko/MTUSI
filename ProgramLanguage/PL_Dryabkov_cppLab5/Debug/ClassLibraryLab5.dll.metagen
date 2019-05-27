@@ -18,6 +18,9 @@ Class ClassLibraryLab5.Class2: AutoLayout, AnsiClass, Class, Public, BeforeField
     VvodL(TextBox): PrivateScope, Public, Static, HideBySig
     Funk(Double, Double, Int32): PrivateScope, Public, Static, HideBySig
     VivodL(Double, ListBox, Double): PrivateScope, Public, Static, HideBySig
+Class ClassLibraryLab51.Class3: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
     Choose(Double, Double, Double): PrivateScope, Public, Static, HideBySig
     Vivod(TextBox, Double): PrivateScope, Public, Static, HideBySig
     Vvod(TextBox): PrivateScope, Public, Static, HideBySig
