@@ -89,3 +89,7 @@ E:\GIT\MTUSI\ProgramLanguage\9P_Project\9P_Project\bin\Debug\ClassLibrary6Sharp.
 E:\GIT\MTUSI\ProgramLanguage\9P_Project\9P_Project\bin\Debug\ClassLibrary6Sharp.pdb
 E:\GIT\MTUSI\ProgramLanguage\9P_Project\9P_Project\obj\Debug\_9P_Project.LB7_Main.resources
 E:\GIT\MTUSI\ProgramLanguage\9P_Project\9P_Project\obj\Debug\_9P_Project.LB7_Titul.resources
+E:\GIT\MTUSI\ProgramLanguage\9P_Project\9P_Project\bin\Debug\ClassLibrary9.dll
+E:\GIT\MTUSI\ProgramLanguage\9P_Project\9P_Project\bin\Debug\ClassLibrary9.pdb
+E:\GIT\MTUSI\ProgramLanguage\9P_Project\9P_Project\obj\Debug\_9P_Project.LB9_Titul.resources
+E:\GIT\MTUSI\ProgramLanguage\9P_Project\9P_Project\obj\Debug\_9P_Project.LB9_Main.resources

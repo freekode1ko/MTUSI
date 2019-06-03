@@ -91,7 +91,7 @@ namespace _9P_Project
                     f3.Show();
                     break;
                 case "System.Windows.Forms.Button, Text: Лабораторная работа № 4":
-                    LB4_Titul f4 = new LB4_Titul();
+                    LB9_Main f4 = new LB9_Main();
                     this.Hide();
                     f4.Show();
                     break;

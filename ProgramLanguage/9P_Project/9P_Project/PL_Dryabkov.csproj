@@ -39,6 +39,9 @@
     <Reference Include="ClassLibrary6Sharp">
       <HintPath>..\..\ClassLibrary6Sharp\ClassLibrary6Sharp\bin\Debug\ClassLibrary6Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="ClassLibrary9">
+      <HintPath>..\..\ClassLibrary9\ClassLibrary9\bin\Debug\ClassLibrary9.dll</HintPath>
+    </Reference>
     <Reference Include="ClassLibraryLab2, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\9P\ClassLibraryLab2\ClassLibraryLab2\bin\Debug\ClassLibraryLab2.dll</HintPath>
@@ -93,17 +96,17 @@
     <Compile Include="Lab3\LB3_Titul.Designer.cs">
       <DependentUpon>LB3_Titul.cs</DependentUpon>
     </Compile>
-    <Compile Include="Lab4\LB4_Main.cs">
+    <Compile Include="Lab4\LB9_Titul.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lab4\LB4_Main.Designer.cs">
-      <DependentUpon>LB4_Main.cs</DependentUpon>
+    <Compile Include="Lab4\LB9_Titul.Designer.cs">
+      <DependentUpon>LB9_Titul.cs</DependentUpon>
     </Compile>
-    <Compile Include="Lab4\LB4_Titul.cs">
+    <Compile Include="Lab4\LB9_Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lab4\LB4_Titul.Designer.cs">
-      <DependentUpon>LB4_Titul.cs</DependentUpon>
+    <Compile Include="Lab4\LB9_Main.Designer.cs">
+      <DependentUpon>LB9_Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Lab5\LB5_Main.cs">
       <SubType>Form</SubType>
@@ -166,6 +169,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lab3\LB3_Titul.resx">
       <DependentUpon>LB3_Titul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab4\LB9_Titul.resx">
+      <DependentUpon>LB9_Titul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab4\LB9_Main.resx">
+      <DependentUpon>LB9_Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lab7\LB7_Main.resx">
       <DependentUpon>LB7_Main.cs</DependentUpon>
