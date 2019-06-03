@@ -1,0 +1,10 @@
+E:\GIT\MTUSI\ProgramLanguage\ClassLibrary9\ClassLibrary9\obj\Debug\ClassLibrary9.csprojAssemblyReference.cache
+E:\GIT\MTUSI\ProgramLanguage\ClassLibrary9\ClassLibrary9\obj\Debug\ClassLibrary9.csproj.CoreCompileInputs.cache
+E:\GIT\MTUSI\ProgramLanguage\ClassLibrary9\ClassLibrary9\bin\Debug\ClassLibrary9.dll
+E:\GIT\MTUSI\ProgramLanguage\ClassLibrary9\ClassLibrary9\bin\Debug\ClassLibrary9.pdb
+E:\GIT\MTUSI\ProgramLanguage\ClassLibrary9\ClassLibrary9\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+E:\GIT\MTUSI\ProgramLanguage\ClassLibrary9\ClassLibrary9\obj\Debug\Interop.ADOX.dll
+E:\GIT\MTUSI\ProgramLanguage\ClassLibrary9\ClassLibrary9\obj\Debug\ClassLibrary9.csproj.ResolveComReference.cache
+E:\GIT\MTUSI\ProgramLanguage\ClassLibrary9\ClassLibrary9\obj\Debug\ClassLibrary9.csproj.CopyComplete
+E:\GIT\MTUSI\ProgramLanguage\ClassLibrary9\ClassLibrary9\obj\Debug\ClassLibrary9.dll
+E:\GIT\MTUSI\ProgramLanguage\ClassLibrary9\ClassLibrary9\obj\Debug\ClassLibrary9.pdb
