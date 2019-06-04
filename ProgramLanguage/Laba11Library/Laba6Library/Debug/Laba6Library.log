@@ -1,0 +1,6 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Laba6Library.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Laba10Library.cpp
+c:\users\freek\desktop\laba11library\laba6library\laba10library.cpp(94): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\freek\desktop\laba11library\laba6library\laba10library.cpp(136): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\freek\desktop\laba11library\laba6library\laba10library.cpp(160): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  Laba6Library.vcxproj -> C:\Users\freek\Desktop\Laba11Library\Debug\Laba9Library.dll
