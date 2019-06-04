@@ -24,3 +24,10 @@ Class ClassLibraryLab51.Class3: AutoLayout, AnsiClass, Class, Public, BeforeFiel
     Choose(Double, Double, Double): PrivateScope, Public, Static, HideBySig
     Vivod(TextBox, Double): PrivateScope, Public, Static, HideBySig
     Vvod(TextBox): PrivateScope, Public, Static, HideBySig
+Class Libr5.Class1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    vvod(TextBox): PrivateScope, Public, Static, HideBySig
+    vivod(Double, TextBox): PrivateScope, Public, Static, HideBySig
+    vivodList(Double, Double, ListBox): PrivateScope, Public, Static, HideBySig
+    Euler(Double, Double, Double* IsImplicitlyDereferenced, ListBox): PrivateScope, Public, Static, HideBySig

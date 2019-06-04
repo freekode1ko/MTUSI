@@ -67,6 +67,8 @@ namespace PLDryabkovcpp {
 
 
 	private: System::Windows::Forms::Label^  label12;
+	private: System::Windows::Forms::TextBox^  z2_value;
+	private: System::Windows::Forms::Label^  label5;
 
 
 
@@ -98,6 +100,8 @@ namespace PLDryabkovcpp {
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->label12 = (gcnew System::Windows::Forms::Label());
+			this->z2_value = (gcnew System::Windows::Forms::TextBox());
+			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -227,11 +231,28 @@ namespace PLDryabkovcpp {
 			this->label12->Size = System::Drawing::Size(0, 13);
 			this->label12->TabIndex = 8;
 			// 
+			// z2_value
+			// 
+			this->z2_value->Location = System::Drawing::Point(256, 252);
+			this->z2_value->Name = L"z2_value";
+			this->z2_value->Size = System::Drawing::Size(100, 20);
+			this->z2_value->TabIndex = 1;
+			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->Location = System::Drawing::Point(220, 258);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(28, 13);
+			this->label5->TabIndex = 9;
+			this->label5->Text = L"Eler:";
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(963, 531);
+			this->Controls->Add(this->label5);
 			this->Controls->Add(this->label12);
 			this->Controls->Add(this->label8);
 			this->Controls->Add(this->label7);
@@ -242,6 +263,7 @@ namespace PLDryabkovcpp {
 			this->Controls->Add(this->Answer_List);
 			this->Controls->Add(this->c_value);
 			this->Controls->Add(this->b_value);
+			this->Controls->Add(this->z2_value);
 			this->Controls->Add(this->z_value);
 			this->Controls->Add(this->x_value);
 			this->Controls->Add(this->b1_value);
@@ -269,12 +291,18 @@ namespace PLDryabkovcpp {
 
 			ClassLibraryLab51::Class3::Vivod(z_value, rez);
 			
-			//task 2
+			/*//task 2
 			double xx = Class2::VvodL(b_value);
 
 			double eps = Class2::VvodL(c_value);
 
-			Class2::Rebound(eps, xx, Answer_List);
+			Class2::Rebound(eps, xx, Answer_List);*/
+			//task 3
+			double E = Libr5::Class1::vvod(c_value);
+			double X = Libr5::Class1::vvod(b_value);
+			double res;
+			Libr5::Class1::Euler(X,E,res,Answer_List);
+			Libr5::Class1::vivod(res,z2_value);
 			
 		}
 		catch (Exception^ e) 
