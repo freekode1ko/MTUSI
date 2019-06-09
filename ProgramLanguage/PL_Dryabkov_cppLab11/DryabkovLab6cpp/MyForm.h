@@ -48,6 +48,7 @@ namespace DryabkovLab6cpp {
 	private: System::Windows::Forms::Label^  label4;
 	private: System::Windows::Forms::Button^  button2;
 	private: System::Windows::Forms::Button^  button3;
+	private: System::Windows::Forms::DataGridView^  dataGridView4;
 
 
 
@@ -74,9 +75,11 @@ namespace DryabkovLab6cpp {
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->dataGridView4 = (gcnew System::Windows::Forms::DataGridView());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// dataGridView1
@@ -193,11 +196,26 @@ namespace DryabkovLab6cpp {
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
+			// dataGridView4
+			// 
+			this->dataGridView4->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
+			this->dataGridView4->AutoSizeRowsMode = System::Windows::Forms::DataGridViewAutoSizeRowsMode::AllCells;
+			this->dataGridView4->BackgroundColor = System::Drawing::SystemColors::Control;
+			this->dataGridView4->BorderStyle = System::Windows::Forms::BorderStyle::None;
+			this->dataGridView4->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView4->ColumnHeadersVisible = false;
+			this->dataGridView4->Location = System::Drawing::Point(755, 334);
+			this->dataGridView4->Name = L"dataGridView4";
+			this->dataGridView4->RowHeadersVisible = false;
+			this->dataGridView4->Size = System::Drawing::Size(240, 150);
+			this->dataGridView4->TabIndex = 11;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1032, 551);
+			this->Controls->Add(this->dataGridView4);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->label4);
@@ -213,34 +231,33 @@ namespace DryabkovLab6cpp {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
-		//int arrayCount = 0;// номер группы массивов в базе данных
-		//int matrixCount = 0;// номер группы матриц в базе данных
+
 		int n = 0;// число строк
 		int m = 0;// число столбцов
 		int **mat;// исходная матрица
 		int max;// масимальный четный элемент
 		int k;// число элементов в результирующей матрице
 		int *rezmas;// результирующая матрица
-		//int *rezmas2;// отфильтрованная матрица 
-		//int **rezmat;// результирующая матрица
+
 
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) 
 	{
-		// ----------- Ввод количества строк и столбцов матрицы исходной матрицы -----------//
+		//  Ввод количества строк и столбцов матрицы исходной матрицы
 		String^ g1 = Interaction::InputBox("Введите число строк матрицы:", "Число строк = ", "5", -1, -1);
 		String^ g2 = Interaction::InputBox("Введите число столбцов матрицы:", "Число стобцов = ", "5", -1, -1);
 		n = Convert::ToInt32(g1);
 		m = Convert::ToInt32(g2);
-		// ----------- Создание и вывод исходной матрицы -----------//
+		//  Создание и вывод исходной матрицы
 		mat = new int*[n];
 		Lab10::input_mas2(mat, n, m);
 		Lab10::output_mas_int(mat, n, m, dataGridView1);
-		// ----------- Создание и вывод результирующего массива -----------//
+		//  Создание и вывод результирующего массива 
 
 		max = Lab10::max_mas(mat, n, m);
 		Lab10::vivod_Label2(max, label1);
@@ -249,13 +266,24 @@ namespace DryabkovLab6cpp {
 		Lab10::set_mas2(mat, rezmas, n, m, max);
 		Lab10::output_mas_int2(rezmas, k, dataGridView2);
 		Lab10::output_mas_int2(rezmas, k, dataGridView3);
-		// ----------- Создание и вывод отфильрованного массива -----------// 
-		//rezmas2 = Lab10::puzir(rezmas, k);
-		//Lab10::output_mas_int2(rezmas2, k, Grid3);
-		// ----------- Создание второй матрицы -----------//
-		//rezmat = new int*[n];
-		//Lab10::set_mas3(mat, rezmat, n, m, max);
-		//Lab10::output_mas_int(rezmat, n, m, Grid4);
+
+		Lab10^ msv = gcnew Laba10Library::Lab10();
+		msv->CreateBD(" ");
+		msv->add_struct(n, " ");
+		msv->addToBD(n, m, mat, " ");
+
+		//
+		String^ g3 = Interaction::InputBox("Введите число столбцов матрицы:", "Число стобцов = ", "5", -1, -1);
+		int	mm = Convert::ToInt32(g3);
+		
+		int dd = Lab10::LowCounter(mat, m, mm);
+
+		Lab10::Swamp(mat, n, m, dd);
+		Lab10::output_mas_int(mat, n, m, dataGridView4);
+		msv->add_struct2(n, " ");
+		msv->addToBD2(n, m, mat, " ");
+		//Lab10::output_mas_int2(mat, k, dataGridView4);
+
 
 	}
 	private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) 
@@ -269,11 +297,11 @@ namespace DryabkovLab6cpp {
 	}
 
 private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) 
-{
-	Lab10^ msv = gcnew Laba10Library::Lab10();
-	msv->CreateBD(" ");
-	msv->add_struct(n, " ");
-	msv->addToBD(n, m, mat, " ");
+{//запись 2-х мерной матрици в базу данных
+
+
+	//msv->add_struct(n, " ");
+//	msv->addToBD(n, m, mat, " ");
 }
 };
 }
