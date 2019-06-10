@@ -1,0 +1,6 @@
+E:\GIT\MTUSI\ProgramLanguage\Lab2Class\Lab2Class\bin\Debug\Lab2Class.dll
+E:\GIT\MTUSI\ProgramLanguage\Lab2Class\Lab2Class\bin\Debug\Lab2Class.pdb
+E:\GIT\MTUSI\ProgramLanguage\Lab2Class\Lab2Class\obj\Debug\Lab2Class.csprojAssemblyReference.cache
+E:\GIT\MTUSI\ProgramLanguage\Lab2Class\Lab2Class\obj\Debug\Lab2Class.csproj.CoreCompileInputs.cache
+E:\GIT\MTUSI\ProgramLanguage\Lab2Class\Lab2Class\obj\Debug\Lab2Class.dll
+E:\GIT\MTUSI\ProgramLanguage\Lab2Class\Lab2Class\obj\Debug\Lab2Class.pdb
