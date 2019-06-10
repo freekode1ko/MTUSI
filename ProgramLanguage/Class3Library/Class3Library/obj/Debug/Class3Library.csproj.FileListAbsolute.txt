@@ -1,0 +1,6 @@
+C:\Users\freek\Desktop\Class3Library\Class3Library\obj\Debug\Class3Library.csprojAssemblyReference.cache
+C:\Users\freek\Desktop\Class3Library\Class3Library\obj\Debug\Class3Library.csproj.CoreCompileInputs.cache
+C:\Users\freek\Desktop\Class3Library\Class3Library\bin\Debug\Class3Library.dll
+C:\Users\freek\Desktop\Class3Library\Class3Library\bin\Debug\Class3Library.pdb
+C:\Users\freek\Desktop\Class3Library\Class3Library\obj\Debug\Class3Library.dll
+C:\Users\freek\Desktop\Class3Library\Class3Library\obj\Debug\Class3Library.pdb
