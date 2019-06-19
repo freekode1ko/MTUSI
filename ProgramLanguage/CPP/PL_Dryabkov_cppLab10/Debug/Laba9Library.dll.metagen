@@ -1,0 +1,30 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Laba9Library, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Laba10Library.Lab10: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    input_mas2(Int32**, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    max_mas(Int32**, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    output_mas_int(Int32**, Int32, Int32, DataGridView): PrivateScope, Public, Static, HideBySig
+    set_count2(Int32**, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    set_mas2(Int32**, Int32*, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    set_mas3(Int32**, Int32**, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    output_mas_int2(Int32*, Int32, DataGridView): PrivateScope, Public, Static, HideBySig
+    vivod_Label2(Int32, Label): PrivateScope, Public, Static, HideBySig
+    ElDel(Double*, Int32, DataGridView): PrivateScope, Public, Static, HideBySig
+    out_ElDel(Double*, DataGridView): PrivateScope, Public, Static, HideBySig
