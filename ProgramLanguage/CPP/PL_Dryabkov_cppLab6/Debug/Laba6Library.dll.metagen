@@ -1,0 +1,28 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Laba6Library, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Laba6Library.Lab6: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    enter_mas(Double*, Int32): PrivateScope, Public, Static, HideBySig
+    output_mas(Double*, Int32, DataGridView): PrivateScope, Public, Static, HideBySig
+    sum_mas(Double*, Int32, Double* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    set_count(Double*, Int32, Double, Int32* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    set_mas(Double*, Double*, Int32, Double): PrivateScope, Public, Static, HideBySig
+    vivod_Label(Double, Label): PrivateScope, Public, Static, HideBySig
+    aaa(Double*, Int32, DataGridView): PrivateScope, Public, Static, HideBySig
+    out_aaa(Double*, DataGridView): PrivateScope, Public, Static, HideBySig

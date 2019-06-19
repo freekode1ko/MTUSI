@@ -1,0 +1,4 @@
+﻿  MyForm.cpp
+c:\users\freek\desktop\placeforshit\mtusi_sec\programlanguage\mtusi\programlanguage\pl_dryabkov_cpplab6\dryabkovlab6cpp\MyForm.h(176): warning C4101: 'e': unreferenced local variable
+c:\users\freek\desktop\placeforshit\mtusi_sec\programlanguage\mtusi\programlanguage\pl_dryabkov_cpplab6\dryabkovlab6cpp\MyForm.h(193): warning C4101: 'e': unreferenced local variable
+  DryabkovLab6cpp.vcxproj -> C:\Users\freek\Desktop\PlaceForShit\MTUSI_Sec\ProgramLanguage\MTUSI\ProgramLanguage\PL_Dryabkov_cppLab6\Debug\DryabkovLab6cpp.exe
