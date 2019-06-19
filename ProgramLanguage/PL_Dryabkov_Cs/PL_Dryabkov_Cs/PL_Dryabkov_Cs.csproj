@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0DD856BA-DDFA-4D00-BC8C-4CBDC7160377}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PL_Dryabkov_Cs</RootNamespace>
+    <AssemblyName>PL_Dryabkov_Cs</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Class3Library">
+      <HintPath>..\..\Class3Library\Class3Library\bin\Debug\Class3Library.dll</HintPath>
+    </Reference>
+    <Reference Include="ClassLibrary6Sharp">
+      <HintPath>..\..\ClassLibrary6Sharp\ClassLibrary6Sharp\bin\Debug\ClassLibrary6Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ClassLibrary9">
+      <HintPath>..\..\ClassLibrary9\ClassLibrary9\bin\Debug\ClassLibrary9.dll</HintPath>
+    </Reference>
+    <Reference Include="Lab2Class">
+      <HintPath>..\..\Lab2Class\Lab2Class\bin\Debug\Lab2Class.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Lab1\Lab1_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab1\Lab1_Main.Designer.cs">
+      <DependentUpon>Lab1_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab1\Lab1_Title.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab1\Lab1_Title.Designer.cs">
+      <DependentUpon>Lab1_Title.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab2\Lab2_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab2\Lab2_Main.Designer.cs">
+      <DependentUpon>Lab2_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab2\Lab2_Title.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab2\Lab2_Title.Designer.cs">
+      <DependentUpon>Lab2_Title.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab3\Lab3_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab3\Lab3_Main.Designer.cs">
+      <DependentUpon>Lab3_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab3\Lab3_Titul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab3\Lab3_Titul.Designer.cs">
+      <DependentUpon>Lab3_Titul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab7\Lab7_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab7\Lab7_Main.Designer.cs">
+      <DependentUpon>Lab7_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab9\Lab9_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab9\Lab9_Main.Designer.cs">
+      <DependentUpon>Lab9_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Lab1\Lab1_Main.resx">
+      <DependentUpon>Lab1_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab1\Lab1_Title.resx">
+      <DependentUpon>Lab1_Title.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab2\Lab2_Main.resx">
+      <DependentUpon>Lab2_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab2\Lab2_Title.resx">
+      <DependentUpon>Lab2_Title.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab3\Lab3_Main.resx">
+      <DependentUpon>Lab3_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab3\Lab3_Titul.resx">
+      <DependentUpon>Lab3_Titul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab7\Lab7_Main.resx">
+      <DependentUpon>Lab7_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab9\Lab9_Main.resx">
+      <DependentUpon>Lab9_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
