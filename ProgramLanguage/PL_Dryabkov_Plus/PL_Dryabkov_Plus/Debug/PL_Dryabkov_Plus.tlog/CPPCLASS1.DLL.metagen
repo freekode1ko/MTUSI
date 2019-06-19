@@ -1,0 +1,48 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly CPPClass1, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Microsoft.VisualC, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Class CPPClass1.Class1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    inpd(TextBox): PrivateScope, Public, Static, HideBySig
+    outpd(Double, TextBox): PrivateScope, Public, Static, HideBySig
+    outlist(Double, Double, Double, ListBox): PrivateScope, Public, Static, HideBySig
+    func(Double, Double, Double, Double): PrivateScope, Public, Static, HideBySig
+    task(Double, Double, Double, Double* IsImplicitlyDereferenced, ListBox): PrivateScope, Public, Static, HideBySig
+Class Lab5.Class2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    func(Double, Double, Double, Double): PrivateScope, Public, Static, HideBySig
+    inpd(TextBox): PrivateScope, Public, Static, HideBySig
+    outpd(Double, TextBox): PrivateScope, Public, Static, HideBySig
+    outlist(Double, Double, Double, ListBox): PrivateScope, Public, Static, HideBySig
+    task(Double, Double, Double, Double* IsImplicitlyDereferenced, ListBox): PrivateScope, Public, Static, HideBySig
+Class Lab5_2.Class3: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    inpd(TextBox): PrivateScope, Public, Static, HideBySig
+    outlist(Double, ListBox): PrivateScope, Public, Static, HideBySig
+    task(Double, Double, ListBox): PrivateScope, Public, Static, HideBySig
+Class Lab6.lab6: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    entArr(TextBox): PrivateScope, Public, Static, HideBySig
+    fillArr(Double*, Int32): PrivateScope, Public, Static, HideBySig
+    outpArr(Double*, Int32, DataGridView): PrivateScope, Public, Static, HideBySig
+    invArr(Double*, Int32): PrivateScope, Public, Static, HideBySig
+    tran1Arr(Double*, Double*, Int32, Double): PrivateScope, Public, Static, HideBySig
+    tran2Arr(Double*, Double*, Int32, Double): PrivateScope, Public, Static, HideBySig

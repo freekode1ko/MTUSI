@@ -1,0 +1,15 @@
+﻿  MainForm.cpp
+e:\git\mtusi\programlanguage\pl_dryabkov_plus\pl_dryabkov_plus\mainform.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\git\mtusi\programlanguage\pl_dryabkov_plus\pl_dryabkov_plus\lab4.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\git\mtusi\programlanguage\pl_dryabkov_plus\pl_dryabkov_plus\lab4.h(410): warning C4101: 'ex': unreferenced local variable
+e:\git\mtusi\programlanguage\pl_dryabkov_plus\pl_dryabkov_plus\mainform.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\git\mtusi\programlanguage\pl_dryabkov_plus\pl_dryabkov_plus\lab5.h(302): warning C4101: 'e': unreferenced local variable
+e:\git\mtusi\programlanguage\pl_dryabkov_plus\pl_dryabkov_plus\mainform.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\git\mtusi\programlanguage\pl_dryabkov_plus\pl_dryabkov_plus\lab6.h(189): warning C4101: 'e': unreferenced local variable
+e:\git\mtusi\programlanguage\pl_dryabkov_plus\pl_dryabkov_plus\lab6.h(206): warning C4101: 'e': unreferenced local variable
+e:\git\mtusi\programlanguage\pl_dryabkov_plus\pl_dryabkov_plus\mainform.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\git\mtusi\programlanguage\pl_dryabkov_plus\pl_dryabkov_plus\lab8.h(231): warning C4101: 'e': unreferenced local variable
+e:\git\mtusi\programlanguage\pl_dryabkov_plus\pl_dryabkov_plus\mainform.h(6): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\git\mtusi\programlanguage\pl_dryabkov_plus\pl_dryabkov_plus\mainform.h(7): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\git\mtusi\programlanguage\pl_dryabkov_plus\pl_dryabkov_plus\mainform.h(8): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  PL_Dryabkov_Plus.vcxproj -> E:\GIT\MTUSI\ProgramLanguage\PL_Dryabkov_Plus\PL_Dryabkov_Plus\Debug\PL_Dryabkov_Plus.exe
