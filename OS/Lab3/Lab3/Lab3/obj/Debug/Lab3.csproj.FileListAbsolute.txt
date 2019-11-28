@@ -1,0 +1,9 @@
+E:\ElderShit\OldDesk\MTYSI\17\19.2\OS\Lab3\Lab3\Lab3\bin\Debug\Lab3.exe.config
+E:\ElderShit\OldDesk\MTYSI\17\19.2\OS\Lab3\Lab3\Lab3\bin\Debug\Lab3.exe
+E:\ElderShit\OldDesk\MTYSI\17\19.2\OS\Lab3\Lab3\Lab3\bin\Debug\Lab3.pdb
+E:\ElderShit\OldDesk\MTYSI\17\19.2\OS\Lab3\Lab3\Lab3\obj\Debug\Lab3.csprojAssemblyReference.cache
+E:\ElderShit\OldDesk\MTYSI\17\19.2\OS\Lab3\Lab3\Lab3\obj\Debug\Lab3.Properties.Resources.resources
+E:\ElderShit\OldDesk\MTYSI\17\19.2\OS\Lab3\Lab3\Lab3\obj\Debug\Lab3.csproj.GenerateResource.cache
+E:\ElderShit\OldDesk\MTYSI\17\19.2\OS\Lab3\Lab3\Lab3\obj\Debug\Lab3.exe
+E:\ElderShit\OldDesk\MTYSI\17\19.2\OS\Lab3\Lab3\Lab3\obj\Debug\Lab3.pdb
+E:\ElderShit\OldDesk\MTYSI\17\19.2\OS\Lab3\Lab3\Lab3\obj\Debug\Lab3.Main.resources
