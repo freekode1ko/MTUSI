@@ -39,13 +39,14 @@ namespace TODoDler
         }
         private void BT_Enter_Click(object sender, EventArgs e)
         {
+            string Ans = "";
             try
             {
                 NN = TB_Login.Text;
                 PP = TB_Pass.Text;
                 var deadline = GetDeadline();
                 var jsonToWrite = JsonConvert.SerializeObject(deadline, Formatting.Indented);
-                var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://192.168.43.209:8000/descpath/login/");
+                var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://192.168.1.225:8000/descpath/login/");
                 httpWebRequest.ContentType = "application/json";
                 httpWebRequest.Method = "POST";
                 ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls;
@@ -58,9 +59,14 @@ namespace TODoDler
                 var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
                 
                 using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
-                { var result = streamReader.ReadToEnd();MessageBox.Show(result.ToString());
-                    if (result.ToString()=="")
-                    { }
+                { var result = streamReader.ReadToEnd(); Ans = result.ToString();
+                    if (Ans == "{}")
+                    { MessageBox.Show("You in list, move along");
+                        this.Hide();
+                        MainForm Main = new MainForm();
+                        Main.Show();
+                    }
+                    else { MessageBox.Show(Ans); }
                 }
             }
 
