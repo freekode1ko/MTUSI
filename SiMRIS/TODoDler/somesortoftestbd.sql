@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Окт 14 2019 г., 19:09
+-- Время создания: Дек 08 2019 г., 18:39
 -- Версия сервера: 5.6.41
 -- Версия PHP: 5.5.38
 
@@ -40,10 +40,13 @@ CREATE TABLE `deds` (
 --
 
 INSERT INTO `deds` (`ID`, `ProjectName`, `Note`, `EndDate`) VALUES
-(9, 'SomeShit', 'Do it Niger', '01.01.1996'),
-(12, 'NEW TEST', 'WE TRY', '10.10.2006'),
-(24, 'IDK', 'I think this ist working', '66.99.6969'),
-(25, 'IDK', 'I think this ist working', '66.99.6969');
+(1, '', 'first things first', '2019-12-11 21:00:00'),
+(30, '', 'SSD', '2019-12-08 21:00:02'),
+(31, '', 'Do the thing', '2019-12-08 22:00:03'),
+(32, '', 'i gess i\'ll just leve it here', '2019-12-09 21:00:04'),
+(33, '', '12345678910\"\'', '2019-12-09 22:00:05'),
+(34, '', 'WOW', '2019-12-10 22:00:06'),
+(35, '', 'HEY', '2019-12-10 23:00:07');
 
 -- --------------------------------------------------------
 
@@ -63,13 +66,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`UserID`, `UserName`, `UserPassword`, `UserPrivilege`) VALUES
-(1, 'Admin', 'Admin', 2),
-(3, 'VIP_User', 'VIP_User', 1),
-(4, 'User', 'User', 0),
-(5, 'Gun', 'Done', 2),
-(6, 'Fuck', 'Face', 0),
-(7, 'Suck', 'Some', 0),
-(8, 'kakJeYaZaebalsya', 'Bleat', 0);
+(9, 'User', 'User', 0),
+(10, 'Admin', 'Admin', 0);
 
 --
 -- Индексы сохранённых таблиц
@@ -96,13 +94,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `deds`
 --
 ALTER TABLE `deds`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `UserID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `UserID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

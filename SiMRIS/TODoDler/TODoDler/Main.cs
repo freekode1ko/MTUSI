@@ -21,7 +21,7 @@ namespace TODoDler
     {
         //Global var
         string MessBodyText = "You have new notification"; //notification msg 
-        string MessTitleText = "";//msg. project name
+        string MessTitleText = "You have new notification";//msg. project name
         string DATATIME = ""; //deadline timer(date)
         string JsonPath = Directory.GetCurrentDirectory().ToString()+ @"\Package.json"; //create json path
         string ConnectStr = "server=localhost;user=root;database=somesortoftestbd;"; // connect to db
@@ -183,7 +183,8 @@ namespace TODoDler
                         times.Add(Convert.ToDateTime(wowe.Remove(19)));
 
                         dataGridView1.Rows.Add(resultLast1, resultLast2, resultLast3);
-                        //serch to min from date-time
+                        //try sync with db
+
 
                     }
                 }
@@ -216,6 +217,7 @@ namespace TODoDler
             poop.ContentText = MessBodyText;
             poop.Popup();
         }
+        /*
         private void SendToServ()
         {
             try
@@ -235,7 +237,7 @@ namespace TODoDler
                 var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
                 using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
                     {var result = streamReader.ReadToEnd();}
-            }catch (Exception ex){ /*MessageBox.Show("Error: " + ex);*/ }
+            }catch (Exception ex){ /*MessageBox.Show("Error: " + ex); }
         }
         private void ReadJsonFile()
         {
@@ -259,19 +261,22 @@ namespace TODoDler
             {MessageBox.Show("Error: " + ex);}
            
         }
+*/
+
         private void AddDeadToDB()
         {
             try { 
             MySqlConnection conn = new MySqlConnection(ConnectStr);
             conn.Open();
-            string Sql = "INSERT INTO deds VALUES('', '" + MessTitleText + "', '" + MessBodyText + "', '" + DATATIME + "')";
-            MessageBox.Show(Sql);
+            string Sql = "INSERT INTO deds VALUES('', '', '" + NT + "', '" + NTD + "')";
+           // MessageBox.Show(Sql);
             MySqlCommand CommandSQL = new MySqlCommand(Sql, conn);
             string GetProjectName = CommandSQL.ExecuteScalar().ToString();
             conn.Close();
             }
             catch (Exception EX) { /* MessageBox.Show(EX.ToString()); */}
         }
+        /*
         private void CreateJsonFile()
         {
             try
@@ -285,7 +290,7 @@ namespace TODoDler
             catch (Exception ex)
             { MessageBox.Show("Error: " + ex); }
         }
-
+        */
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
@@ -315,7 +320,7 @@ namespace TODoDler
                 {
                     var result = streamReader.ReadToEnd();
                     if (result.ToString() == "1")
-                    { GetAllNotif(); }
+                    { GetAllNotif(); AddDeadToDB(); }
                     else {MessageBox.Show("Error: " + result.ToString(), "Warning"); } 
                 }
             }

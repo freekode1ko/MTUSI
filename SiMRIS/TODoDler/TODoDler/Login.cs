@@ -77,8 +77,8 @@ namespace TODoDler
 
             catch(Exception Ex)
             {
-                MessageBox.Show("WOW!: " + Ex.ToString());
-            }
+                MessageBox.Show("Server error. Now it offlain mod. Error: " + Ex.ToString());
+            
             ///////////////////////////////////////////////////////////////////////////////////////////////
             string ConnectStr = "server=localhost;user=root;database=somesortoftestbd;"; // connect to db
                 try
@@ -115,6 +115,7 @@ namespace TODoDler
                 else { MessageBox.Show("Wrong Login or Password"); }
             }
                 catch (Exception EX) {  MessageBox.Show(EX.ToString()); }
+            }
         }
 
         private void BT_Reg_Click(object sender, EventArgs e)
