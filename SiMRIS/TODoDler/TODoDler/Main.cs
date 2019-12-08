@@ -20,16 +20,18 @@ namespace TODoDler
     public partial class MainForm : Form
     {
         //Global var
-        string MessBodyText = ""; //notification msg 
+        string MessBodyText = "You have new notification"; //notification msg 
         string MessTitleText = "";//msg. project name
         string DATATIME = ""; //deadline timer(date)
         string JsonPath = Directory.GetCurrentDirectory().ToString()+ @"\Package.json"; //create json path
         string ConnectStr = "server=localhost;user=root;database=somesortoftestbd;"; // connect to db
 
-        string NN = "User";
-        string PP = "User";
+        string NN = Login.AccLogin;//"Log";
+        string PP = Login.AccPassword;//"Pass";
         string NT = "";
         string NTD = "";
+
+        List<DateTime> times = new List<DateTime>();
 
 
         public MainForm()
@@ -104,11 +106,15 @@ namespace TODoDler
                 //SendToServ();//send to Sever
                 //MessageBox.Show("Fifth done");
                 */
-                testc();
+                GetAllNotif();
+                dateTimePicker1_ValueChanged(null,null);
+                //todo - pop up 
+
             } catch (Exception EX) { MessageBox.Show(EX.ToString()); };
         }
-        private void testc()
+        private void GetAllNotif()
         {
+            dataGridView1.Rows.Clear();
             string Ans = "";
             try
             {
@@ -131,15 +137,54 @@ namespace TODoDler
                 {
                     var result = streamReader.ReadToEnd(); Ans = result.ToString();
                     if (Ans == "{}") {}
-                    else 
+                    else
                     {
-                        Match match1 = Regex.Match(Ans, @"\u0022text\u0022: \u0022.*?(\w.*)\s*\u0022,", RegexOptions.Singleline);
-                        string result1 = match1.Success ? match1.Groups[1].Value : "Не найдено";
+                        Match match0 = Regex.Match(Ans, @"\u0022count\u0022: \u0022.*?(\w.*)\s*\u0022, \u0022text0\u0022", RegexOptions.Singleline);
+                        string Counter = match0.Success ? match0.Groups[1].Value : "Не найдено";
+                        int i = 0;
+                        int ii = 1;
+                        times.Clear();
 
-                        Match match2 = Regex.Match(Ans, @"\u0022todatee\u0022: \u0022.*?(\w.*)\s*\u0022}", RegexOptions.Singleline);
-                        string result2 = match2.Success ? match2.Groups[1].Value : "Не найдено";
+                        while (i < Convert.ToInt32(Counter)-1)
 
-                        dataGridView1.Rows.Add(result1, result2);
+                        {
+                            //Match match1 = Regex.Match(Ans, "\u0022text"+i+"\u0022: \u0022"+".*?(\\w.*)\\s*" + "\u0022, \u0022todate" + i + "\u0022:", RegexOptions.Singleline);
+                            Match match1 = Regex.Match(Ans, "\u0022text" + i + "\u0022: \u0022" + ".*?(\\w.*)\\s*" + "\u0022, \u0022todate" + i + "\u0022:", RegexOptions.Singleline);
+                            string result1 = match1.Success ? match1.Groups[1].Value : "Не найдено";
+
+                           // Match match2 = Regex.Match(Ans, "\u0022todate"+i+"\u0022: \u0022"+@".*?(\w.*)\s*\u0022,", RegexOptions.Singleline);
+                            Match match2 = Regex.Match(Ans, "\u0022todate" + i + "\u0022: \u0022" + @".*?([0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]) ", RegexOptions.Singleline);
+                            string result2 = match2.Success ? match2.Groups[1].Value : "Не найдено";
+
+                            Match match3 = Regex.Match(Ans, @".*?([0-9][0-9]:[0-9][0-9]:[0-9][0-9]\W"+"[0-9][0-9]:[0-9][0-9])\u0022, \u0022text" + ii, RegexOptions.Singleline);
+                            string result3 = match3.Success ? match3.Groups[1].Value : "Не найдено";
+
+                            string wow = result2 +" "+ result3;
+                            times.Add(Convert.ToDateTime(wow.Remove(19)));
+
+                            //MessageBox.Show(wow.Remove(19));
+
+                            dataGridView1.Rows.Add(result1, result2, result3);
+                            
+                            i++;ii++;
+
+                        }
+                        Match matchLast = Regex.Match(Ans, "\u0022text" + (Convert.ToString(Convert.ToInt64(Counter)-1)) + "\u0022: \u0022" + ".*?(\\w.*)\\s*" + "\u0022, \u0022todate" + (Convert.ToString(Convert.ToInt64(Counter) - 1)) + "\u0022:", RegexOptions.Singleline);
+                        string resultLast1 = matchLast.Success ? matchLast.Groups[1].Value : "Не найдено";
+
+                        //Match match = Regex.Match(Ans, "\u0022todate" + (Convert.ToString(Convert.ToInt64(Counter) - 1)) + "\u0022: \u0022" + @".*?(\w.*)\s*\u0022}", RegexOptions.Singleline);
+                        Match matchLast1 = Regex.Match(Ans, "\u0022todate" + (Convert.ToString(Convert.ToInt64(Counter) - 1)) + "\u0022: \u0022" + @".*?([0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]) ", RegexOptions.Singleline);
+                        string resultLast2 = matchLast1.Success ? matchLast1.Groups[1].Value : "Не найдено";
+
+                        Match matchLast3 = Regex.Match(Ans, @".*?([0-9][0-9]:[0-9][0-9]:[0-9][0-9]\W" + "[0-9][0-9]:[0-9][0-9])\u0022}", RegexOptions.Singleline);
+                        string resultLast3 = matchLast3.Success ? matchLast3.Groups[1].Value : "Не найдено";
+
+                        string wowe = resultLast2 + " " + resultLast3;
+                        times.Add(Convert.ToDateTime(wowe.Remove(19)));
+
+                        dataGridView1.Rows.Add(resultLast1, resultLast2, resultLast3);
+                        //serch to min from date-time
+
                     }
                 }
             }
@@ -150,8 +195,21 @@ namespace TODoDler
                 //MessageBox.Show("WOW!: " + Ex.ToString());
             }
         }
-        private void GETnotiff()
+        private void GETnotiff(DateTime ThisDate)
         {
+            
+            string date = ThisDate.ToString("yyyy-MM-dd hh-mm-ss").Remove(10); //2019-12-08 21:00:02
+            string time = ThisDate.ToString("HH:mm:ss yyyy-MM-dd").Remove(8);
+            //for(int i =2; i<=dataGridView1.Columns.Count;i++)
+            for(int j=0;j<dataGridView1.Rows.Count;j++)
+            { if (dataGridView1.Rows[j].Cells[1].Value.ToString() == date)
+                {
+                    string check = dataGridView1.Rows[j].Cells[2].Value.ToString().Remove(8);
+                    //MessageBox.Show(check+" / "+ time);
+                    if (check == time) 
+                    {  MessBodyText = dataGridView1.Rows[j].Cells[0].Value.ToString(); break; }
+                }
+            }
             PopupNotifier poop = new PopupNotifier();
             //poop.Image = //Properties.Resources.pepega;
             poop.TitleText = MessTitleText;
@@ -228,24 +286,9 @@ namespace TODoDler
             { MessageBox.Show("Error: " + ex); }
         }
 
-        private void MainForm_ResizeBegin(object sender, EventArgs e)
-        {
-
-        }
-
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -253,7 +296,7 @@ namespace TODoDler
             try
             {
                 NT = richTextBox1.Text;
-                NTD = textBox1.Text;
+                NTD = dateTimePicker1.Text;
                 var deadlines = SendNewNotif();
                 var jsonToWrite = JsonConvert.SerializeObject(deadlines, Formatting.Indented);
                 var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://192.168.1.225:8000/descpath/nm/");
@@ -270,11 +313,10 @@ namespace TODoDler
 
                 using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
                 {
-                    var result = streamReader.ReadToEnd(); MessageBox.Show(result.ToString());
+                    var result = streamReader.ReadToEnd();
                     if (result.ToString() == "1")
-                    {
-                        testc();
-                    }
+                    { GetAllNotif(); }
+                    else {MessageBox.Show("Error: " + result.ToString(), "Warning"); } 
                 }
             }
             catch (Exception Ex)
@@ -282,5 +324,26 @@ namespace TODoDler
                 MessageBox.Show("WOW!: " + Ex.ToString());
             }
 }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            //listBox1.Items.Add(DateTime.Now);
+            times.Sort();
+            times.Reverse();
+            DateTime TimeNotif = times.Last();
+            DateTime TimeNow = DateTime.Now;
+            if(TimeNotif <= TimeNow)
+            {
+             GETnotiff(TimeNotif);
+             times.RemoveAt(times.Count-1);
+            }
+            
+        }
     }
 }

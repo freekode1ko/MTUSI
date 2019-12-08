@@ -42,7 +42,7 @@
             this.TB_Login.Name = "TB_Login";
             this.TB_Login.Size = new System.Drawing.Size(286, 20);
             this.TB_Login.TabIndex = 0;
-            this.TB_Login.Text = "Admin";
+            this.TB_Login.Text = "User";
             // 
             // TB_Pass
             // 
@@ -51,7 +51,7 @@
             this.TB_Pass.PasswordChar = '*';
             this.TB_Pass.Size = new System.Drawing.Size(286, 20);
             this.TB_Pass.TabIndex = 1;
-            this.TB_Pass.Text = "Admin";
+            this.TB_Pass.Text = "User";
             // 
             // BT_Enter
             // 

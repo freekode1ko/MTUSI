@@ -17,12 +17,15 @@ namespace TODoDler
 {
     public partial class Login : Form
     {
+        
         public Login()
         {
             InitializeComponent();
         }
         string NN;
         string PP;
+        public static string AccLogin;
+        public static string AccPassword;
         public class Deadline
         {
             public string name { get; set; }
@@ -44,6 +47,8 @@ namespace TODoDler
             {
                 NN = TB_Login.Text;
                 PP = TB_Pass.Text;
+                AccLogin = TB_Login.Text;
+                AccPassword = TB_Pass.Text;
                 var deadline = GetDeadline();
                 var jsonToWrite = JsonConvert.SerializeObject(deadline, Formatting.Indented);
                 var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://192.168.1.225:8000/descpath/login/");
@@ -60,8 +65,8 @@ namespace TODoDler
                 
                 using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
                 { var result = streamReader.ReadToEnd(); Ans = result.ToString();
-                    if (Ans == "{}")
-                    { MessageBox.Show("You in list, move along");
+                    if (Ans != "not registred")
+                    { //MessageBox.Show("You in list, move along");
                         this.Hide();
                         MainForm Main = new MainForm();
                         Main.Show();
