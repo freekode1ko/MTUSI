@@ -7,3 +7,13 @@ E:\ElderShit\OldDesk\MTYSI\17\19.2\OS\Lab3\Lab3\Lab3\obj\Debug\Lab3.csproj.Gener
 E:\ElderShit\OldDesk\MTYSI\17\19.2\OS\Lab3\Lab3\Lab3\obj\Debug\Lab3.exe
 E:\ElderShit\OldDesk\MTYSI\17\19.2\OS\Lab3\Lab3\Lab3\obj\Debug\Lab3.pdb
 E:\ElderShit\OldDesk\MTYSI\17\19.2\OS\Lab3\Lab3\Lab3\obj\Debug\Lab3.Main.resources
+C:\Users\freek\Desktop\PlaceForShit\MTUSI_Sec\ProgramLanguage\MTUSI\OS\Lab3\Lab3\Lab3\bin\Debug\Lab3.exe.config
+C:\Users\freek\Desktop\PlaceForShit\MTUSI_Sec\ProgramLanguage\MTUSI\OS\Lab3\Lab3\Lab3\bin\Debug\Lab3.exe
+C:\Users\freek\Desktop\PlaceForShit\MTUSI_Sec\ProgramLanguage\MTUSI\OS\Lab3\Lab3\Lab3\bin\Debug\Lab3.pdb
+C:\Users\freek\Desktop\PlaceForShit\MTUSI_Sec\ProgramLanguage\MTUSI\OS\Lab3\Lab3\Lab3\obj\Debug\Lab3.csprojResolveAssemblyReference.cache
+C:\Users\freek\Desktop\PlaceForShit\MTUSI_Sec\ProgramLanguage\MTUSI\OS\Lab3\Lab3\Lab3\obj\Debug\Lab3.Main.resources
+C:\Users\freek\Desktop\PlaceForShit\MTUSI_Sec\ProgramLanguage\MTUSI\OS\Lab3\Lab3\Lab3\obj\Debug\Lab3.Properties.Resources.resources
+C:\Users\freek\Desktop\PlaceForShit\MTUSI_Sec\ProgramLanguage\MTUSI\OS\Lab3\Lab3\Lab3\obj\Debug\Lab3.csproj.GenerateResource.Cache
+C:\Users\freek\Desktop\PlaceForShit\MTUSI_Sec\ProgramLanguage\MTUSI\OS\Lab3\Lab3\Lab3\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
+C:\Users\freek\Desktop\PlaceForShit\MTUSI_Sec\ProgramLanguage\MTUSI\OS\Lab3\Lab3\Lab3\obj\Debug\Lab3.exe
+C:\Users\freek\Desktop\PlaceForShit\MTUSI_Sec\ProgramLanguage\MTUSI\OS\Lab3\Lab3\Lab3\obj\Debug\Lab3.pdb

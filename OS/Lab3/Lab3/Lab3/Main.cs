@@ -102,19 +102,21 @@ namespace Lab3
 
         private void TB_Task1_Click(object sender, EventArgs e)
         {
+            while (true)
+            { 
             Thread write1 = new Thread(WriteInFile1);
             write1.IsBackground = true;
             Thread write2 = new Thread(WriteInFile2);
             write2.IsBackground = true;
-            Thread Read = new Thread(Terminate);
-            Read.IsBackground = true;
+
             write1.Start();
             write2.Start();
-            Read.Start();
-            MessageBox.Show("Close this meessage to proceed");
+
+                Thread.Sleep(100);
+
             write1.Abort();
             write2.Abort();
-            Read.Abort();
+            }
         }
 
         private void TB_Task2_Click(object sender, EventArgs e)
@@ -135,23 +137,31 @@ namespace Lab3
         private void TB_Task3_Click(object sender, EventArgs e)
         {
             ClassCounter Counter = new ClassCounter();
-            Thread sob = new Thread(Counter.sb);
-            sob.Start();
 
+
+            Thread sob = new Thread(Counter.sb);
             bool Exists;
             Mutex mO = new Mutex(true, "guidr", out Exists);
             if (Exists)
             {
+               // Thread sob = new Thread(Counter.sb);
+                sob.Start();
                 Handler_I Handler1 = new Handler_I();
                 Counter.onCount += Handler1.Message;
-            }
-            else
-            {
+                              
+               // sob.Start();
                 Handler_T Handler2 = new Handler_T();
                 Counter.onCount += Handler2.Message;
+                
             }
             MessageBox.Show("Close this meessage to proceed");
             sob.Abort();
+
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
