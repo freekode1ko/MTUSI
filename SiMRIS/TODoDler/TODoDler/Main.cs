@@ -121,7 +121,7 @@ namespace TODoDler
 
                 var deadline = GetDeadline2();
                 var jsonToWrite = JsonConvert.SerializeObject(deadline, Formatting.Indented);
-                var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://192.168.1.225:8000/descpath/login/");
+                var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://192.168.43.69:8000/descpath/login/");
                 httpWebRequest.ContentType = "application/json";
                 httpWebRequest.Method = "POST";
                 ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls;
@@ -304,7 +304,7 @@ namespace TODoDler
                 NTD = dateTimePicker1.Text;
                 var deadlines = SendNewNotif();
                 var jsonToWrite = JsonConvert.SerializeObject(deadlines, Formatting.Indented);
-                var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://192.168.1.225:8000/descpath/nm/");
+                var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://192.168.43.69:8000/descpath/nm/");
                 httpWebRequest.ContentType = "application/json";
                 httpWebRequest.Method = "POST";
                 ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls;

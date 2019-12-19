@@ -1,0 +1,8 @@
+﻿  pch.cpp
+  Server-1.cpp
+c:\users\freek\desktop\snd\cursed\server-1\server-1.cpp(3): warning C4603: '_CRT_SECURE_NO_WARNINGS': macro is not defined or definition is different after precompiled header use
+  c:\users\freek\desktop\snd\cursed\server-1\server-1.cpp(3): note: Add macro to precompiled header instead of defining here
+  c:\users\freek\desktop\snd\cursed\server-1\server-1.cpp(5): note: use of precompiled header
+c:\users\freek\desktop\snd\cursed\server-1\server-1.cpp(71): warning C4101: 'bResult': unreferenced local variable
+c:\users\freek\desktop\snd\cursed\server-1\server-1.cpp(70): warning C4101: 'hMapFile': unreferenced local variable
+  Server-1.vcxproj -> C:\Users\freek\Desktop\snd\Cursed\Debug\Server-1.exe
